@@ -16,10 +16,10 @@ import PreLoader from '@/components/PreLoader.vue';
       <div>
   <div class="container">
  <div class="wrapper">
-   <div class="banner-image"> </div>
-   <h1> Yasmin Vai</h1>
-   <p>Lorem ipsum dolor sit amet, <br/>
-     consectetur adipiscing elit.</p>
+   <div class="banner-image"> <video autoplay muted plays-inline class=" cardback">
+      <source src="../assets/videos/anciao.mp4" type="video/mp4" />
+    </video></div>
+   
   </div>
   <div class="button-wrapper"> 
   <button class="btn outline">DETAILS</button>
@@ -31,10 +31,11 @@ import PreLoader from '@/components/PreLoader.vue';
       <div>
   <div class="container">
  <div class="wrapper">
-   <div class="banner-image"> </div>
-   <h1> Toma no Cu</h1>
-   <p>Lorem ipsum dolor sit amet, <br/>
-     consectetur adipiscing elit.</p>
+  
+   <div class="banner-image"> <video autoplay loop muted plays-inline class=" cardback">
+      <source src="../assets/videos/ausol2.mp4" type="video/mp4" />
+    </video></div>
+  
   </div>
   <div class="button-wrapper"> 
   <button class="btn outline">DETAILS</button>
@@ -71,6 +72,15 @@ body {
   height: 100vh;  
 }
 
+.cardback{
+  background-size: cover;
+  background-position: center;
+  width: 252px;
+  height: 400px;
+  border-radius: 30px;
+  border: #acabab solid 1px;
+}
+
 .container {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -86,12 +96,19 @@ body {
   text-align: center;
   margin: 90px;
   margin-top: 40%;
-  
+  transition: all .3s ease;
+}
+
+.container:hover {
+  transform: scale(1.125);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: all .3s ease;  
 }
 
 .wrapper {
-  width: 100%;
-  height: 100%;
+  width: 252px;
+  height: 400px;
   
 }
 
@@ -102,7 +119,7 @@ body {
   height: 300px;
   width: 100%;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255, 0.255)
+  
 }
 
 h1{

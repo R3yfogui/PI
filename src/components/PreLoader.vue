@@ -4,20 +4,51 @@ import '../../node_modules/vue-preloader/dist/style.css'
 </script>
 
 <template>
- <div style="z-index: 100000;">
+ <div class="teste1" style="z-index: 100000;">
   <TemplatesHeader />
   <TemplatesPage>
 	  <slot />
   </TemplatesPage>
   <TemplatesFooter />
   <VuePreloader
-    background-color="#091a28"
+    background-color="#141414"
     color="#ffffff"
     transition-type="fade-up"
-    :loading-speed="25"
+    :loading-speed="45"
     :transition-speed="1400"
     @loading-is-over="loadingIsOver"
     @transition-is-over="transitionIsOver"
   ></VuePreloader>
 </div>
+<div class="teste">
+  <VuePreloader
+  background-color=""
+  color="#ffffff"
+    transition-type="fade-up"
+    :loading-speed="45"
+    :transition-speed="900"
+    @loading-is-over="loadingIsOver"
+    @transition-is-over="transitionIsOver"
+    
+  > <h1>Está quase lá :)</h1></VuePreloader>
+</div>
 </template>
+
+<style>
+a{
+  color: #141414;
+}
+.teste{
+  z-index: 10000;
+  right: 50%;
+  
+}
+.teste1{
+  left: 50%;
+
+}
+h1{
+  transition: all .3s ease;
+  color: #8f8f8f;
+  margin-bottom: 80px;
+}</style>

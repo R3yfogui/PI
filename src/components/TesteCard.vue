@@ -27,7 +27,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: 10000;
+  z-index: 10;
   backdrop-filter: blur(26px) saturate(130%);
   border-bottom: #f6f4e6 solid 3px;
 }

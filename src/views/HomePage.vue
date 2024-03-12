@@ -32,8 +32,8 @@ import PreLoader from '@/components/PreLoader.vue';
   <div class="container">
  <div class="wrapper">
   
-   <div class="banner-image"> <video autoplay loop muted plays-inline class=" cardback">
-      <source src="../assets/videos/ausol2.mp4" type="video/mp4" />
+   <div class="banner-image"> <video autoplay muted plays-inline class=" cardback">
+      <source src="../assets/videos/morde.mp4" type="video/mp4" />
     </video></div>
   
   </div>
@@ -86,7 +86,7 @@ body {
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.25);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);  
+  border: 5px solid rgba(238, 165, 9, 0.125);  
   padding: 48px; 
   filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
   display: flex;
@@ -102,7 +102,7 @@ body {
 .container:hover {
   transform: scale(1.125);
   color: rgba(255, 255, 255, 0.9);
-  border-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(163, 160, 160, 0.9);
   transition: all .3s ease;  
 }
 

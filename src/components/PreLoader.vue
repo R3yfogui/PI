@@ -22,6 +22,7 @@ import '../../node_modules/vue-preloader/dist/style.css'
 </div>
 <div class="teste">
   <VuePreloader
+  
   background-color=""
   color="#ffffff"
     transition-type="fade-up"
@@ -30,8 +31,11 @@ import '../../node_modules/vue-preloader/dist/style.css'
     @loading-is-over="loadingIsOver"
     @transition-is-over="transitionIsOver"
     
-  > <h1>Está quase lá :)</h1></VuePreloader>
+  > <video autoplay muted plays-inline class=" cardback">
+      <source src="../assets/videos/bardo.mp4" type="video/mp4" />
+    </video></VuePreloader>
 </div>
+
 </template>
 
 <style>
@@ -51,4 +55,9 @@ h1{
   transition: all .3s ease;
   color: #8f8f8f;
   margin-bottom: 80px;
+}
+.cardback{
+  width: 93%;
+  background-size: cover;
+  
 }</style>

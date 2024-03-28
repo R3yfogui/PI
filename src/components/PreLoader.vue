@@ -26,14 +26,12 @@ import '../../node_modules/vue-preloader/dist/style.css'
   background-color=""
   color="#ffffff"
     transition-type="fade-up"
-    :loading-speed="45"
+    :loading-speed="35"
     :transition-speed="900"
     @loading-is-over="loadingIsOver"
     @transition-is-over="transitionIsOver"
     
-  > <video autoplay muted plays-inline class=" cardback">
-      <source src="../assets/videos/bardo.mp4" type="video/mp4" />
-    </video></VuePreloader>
+  > </VuePreloader>
 </div>
 
 </template>

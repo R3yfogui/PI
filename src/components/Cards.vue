@@ -8,7 +8,7 @@ export default {
   },
   data: function(){
     return {
-      options: {glare: true, gyroscope: true}
+      options: { gyroscope: true}
     }
   }
 }

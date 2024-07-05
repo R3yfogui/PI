@@ -16,6 +16,8 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
 </script>
 
 <template>
@@ -24,15 +26,15 @@ window.addEventListener("scroll", reveal);
 
 
 <body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
-        <header class="site-header">
+    <div class="body-wrap boxed-container box-shadow">
+        <header class="site-header" style="color: #8595AE;">
             <div class="container">
                 <div class="site-header-inner">
                     <div class="brand header-brand">
                         <h1 class="m-0">
                             <a href="#">
-								<img class="header-logo-image asset-light" src="" alt="Logo">
-								<img class="header-logo-image asset-dark" src="" alt="Logo">
+								<img class="header-logo-image asset-light" src="../../public/header-illustration-dark.svg" alt="">
+                                
                             </a>
                         </h1>
                     </div>
@@ -40,13 +42,13 @@ window.addEventListener("scroll", reveal);
             </div>
         </header>
 
-        <main>
+        <main  style="background-color: #182538;">
             <section class="hero">
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Landing template for startups</h1>
-	                        <p class="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+	                        <h1 class="hero-title mt-0 reveal">Landing template for startups</h1>
+	                        <p class="hero-paragraph reveal">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
 	                        <div class="hero-cta">
 								<a class="button button-primary" href="#">Buy it now</a>
 								<div class="lights-toggle">
@@ -57,16 +59,16 @@ window.addEventListener("scroll", reveal);
 						</div>
 						<div class="hero-media">
 							<div class="header-illustration">
-								<img class="header-illustration-image asset-light" src="" alt="Header illustration">
-								<img class="header-illustration-image asset-dark" src="" alt="Header illustration">
+								<img class="header-illustration-image asset-dark" src="../../public/images/header-illustration-dark.svg" alt="Header illustration">
+								
 							</div>
 							<div class="hero-media-illustration">
-								<img class="hero-media-illustration-image asset-light" src="" alt="Hero media illustration">
-								<img class="hero-media-illustration-image asset-dark" src="" alt="Hero media illustration">
+								<img class="hero-media-illustration-image asset-dark" src="../../public/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
+								
 							</div>
 							<div class="hero-media-container">
-								<img class="hero-media-image asset-light" src="" alt="Hero media">
-								<img class="hero-media-image asset-dark" src="" alt="Hero media">
+								<img class="hero-media-image asset-dark" src="../../public/images/hero-media-dark.svg" alt="Hero media">
+								
 							</div>
 						</div>
                     </div>
@@ -78,8 +80,8 @@ window.addEventListener("scroll", reveal);
 					<div class="features-inner section-inner has-bottom-divider">
 						<div class="features-header text-center">
 							<div class="container-sm">
-								<h2 class="section-title mt-0">The Product</h2>
-	                            <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+								<h2 class="section-title mt-0 reveal">The Product</h2>
+	                            <p class="section-paragraph reveal">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
 								<div class="features-image">
 									<img class="features-illustration asset-dark" src="" alt="Feature illustration">
 									<img class="features-box asset-dark" src="" alt="Feature box">
@@ -99,7 +101,7 @@ window.addEventListener("scroll", reveal);
                                     </div>
 									<div class="feature-content">
                                     	<h3 class="feature-title mt-0">Discover</h3>
-                                    	<p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
+                                    	<p class="text-sm mb-0 reveal">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
 									</div>
 								</div>
                             </div>
@@ -111,7 +113,7 @@ window.addEventListener("scroll", reveal);
                                     </div>
 									<div class="feature-content">
                                     	<h3 class="feature-title mt-0">Discover</h3>
-                                    	<p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
+                                    	<p class="text-sm mb-0 reveal">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
 									</div>
 								</div>
                             </div>
@@ -224,5 +226,8 @@ transform: translateY(0);
 opacity: 1;
 }
 
+.box-shadow {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+}
 
 </style>

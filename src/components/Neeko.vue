@@ -21,53 +21,49 @@ window.addEventListener("scroll", reveal);
 </script>
 
 <template>
-    <h1 class="reveal">SO HIGH</h1>
+    <h1 class="reveal">SO HIGH TESTE</h1>
+    <IMG src="../.."></IMG>
     
 
 
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container box-shadow">
-        <header class="site-header" style="color: #8595AE;">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-                            <a href="#">
-								<img class="header-logo-image asset-light" src="../../public/header-illustration-dark.svg" alt="">
-                                
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </header>
+        
 
         <main  style="background-color: #182538;">
             <section class="hero">
+                
                 <div class="container">
-                    <div class="hero-inner">
+                    <img class=" teste-dos-cria" src="../../images/header-illustration-light.svg" alt="Header illustration">
+                    <div class="teste">
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0 reveal">Landing template for startups</h1>
 	                        <p class="hero-paragraph reveal">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
-	                        <div class="hero-cta">
+                            
+	                        <div class="hero-cta ">
 								<a class="button button-primary" href="#">Buy it now</a>
 								<div class="lights-toggle">
 									<input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked">
 									<label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">dark</span></span></label>
 								</div>
 							</div>
+                            
 						</div>
-						<div class="hero-media">
+                        <div>
+                            <img class="hero-media-image reveal" src="../../images/hero-media-dark.svg" alt="">
+                        </div>
+						
 							<div class="header-illustration">
-								<img class="header-illustration-image asset-dark" src="../../public/images/header-illustration-dark.svg" alt="Header illustration">
+                              
+                                <img class=" teste-dos-cria" src="" alt="">
 								
-							</div>
+							
 							<div class="hero-media-illustration">
-								<img class="hero-media-illustration-image asset-dark" src="../../public/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
+								<img class="hero-media-illustration-image asset-dark" src="../../images/hero-media-illustration-dark.svg" alt="Hero media illustration">
 								
 							</div>
 							<div class="hero-media-container">
-								<img class="hero-media-image asset-dark" src="../../public/images/hero-media-dark.svg" alt="Hero media">
+								<img class="hero-media-image asset-dark" src="../../images/hero-media-dark.svg" alt="Hero media">
 								
 							</div>
 						</div>
@@ -83,12 +79,12 @@ window.addEventListener("scroll", reveal);
 								<h2 class="section-title mt-0 reveal">The Product</h2>
 	                            <p class="section-paragraph reveal">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
 								<div class="features-image">
-									<img class="features-illustration asset-dark" src="" alt="Feature illustration">
-									<img class="features-box asset-dark" src="" alt="Feature box">
-									<img class="features-illustration asset-dark" src="" alt="Feature illustration top">
-									<img class="features-illustration asset-light" src="" alt="Feature illustration">
-									<img class="features-box asset-light" src="" alt="Feature box">
-									<img class="features-illustration asset-light" src="" alt="Feature illustration top">
+									<img class="features-illustration asset-dark reveal" src="../../images/features-illustration-dark.svg" alt="Feature illustration">
+									<img class="features-box asset-dark reveal" src="../../images/features-box-dark.svg" alt="Feature box">
+									<img class="features-illustration asset-dark reveal" src="../../images/features-illustration-top-dark.svg" alt="Feature illustration top">
+									<img class="features-illustration asset-light reveal" src="../../images/features-illustration-dark.svg" alt="Feature illustration">
+									<img class="features-box asset-light reveal" src="../../images/features-box-dark.svg" alt="Feature box">
+									<img class="features-illustration asset-light reveal" src="../../images/features-illustration-dark.svg" alt="Feature illustration top">
 								</div>
 							</div>
                         </div>
@@ -96,8 +92,8 @@ window.addEventListener("scroll", reveal);
                             <div class="feature is-revealing">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
-										<img class="asset-light" src="" alt="Feature 01">
-										<img class="asset-dark" src="" alt="Feature 01">
+										<img class="asset-light" src="../../images/feature-01-dark.svg" alt="Feature 01">
+										<img class="asset-dark" src="../../images/feature-01-dark.svg" alt="Feature 01">
                                     </div>
 									<div class="feature-content">
                                     	<h3 class="feature-title mt-0">Discover</h3>
@@ -108,8 +104,8 @@ window.addEventListener("scroll", reveal);
 							<div class="feature is-revealing">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
-										<img class="asset-light" src="" alt="Feature 02">
-										<img class="asset-dark" src="" alt="Feature 02">
+										<img class="asset-light" src="../../images/feature-02-dark.svg" alt="Feature 02">
+										<img class="asset-dark" src="../../images/feature-02-dark.svg" alt="Feature 02">
                                     </div>
 									<div class="feature-content">
                                     	<h3 class="feature-title mt-0">Discover</h3>
@@ -120,8 +116,8 @@ window.addEventListener("scroll", reveal);
 							<div class="feature is-revealing">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
-										<img class="asset-light" src="" alt="Feature 03">
-										<img class="asset-dark" src="" alt="Feature 03">
+										<img class="asset-light" src="../../images/feature-03-dark.svg" alt="Feature 03">
+										<img class="asset-dark" src="../../images/feature-03-dark.svg" alt="Feature 03">
                                     </div>
 									<div class="feature-content">
                                     	<h3 class="feature-title mt-0">Discover</h3>
@@ -154,8 +150,8 @@ window.addEventListener("scroll", reveal);
                 <div class="site-footer-inner">
                     <div class="brand footer-brand">
                         <a href="#">
-							<img class="asset-light" src="" alt="Logo">
-							<img class="asset-dark" src="" alt="Logo">
+							<img class="asset-light" src="../../images/logo-dark.svg" alt="Logo">
+							<img class="asset-dark" src="../../images/logo-dark.svg" alt="Logo">
                         </a>
                     </div>
                     <ul class="footer-links list-reset">
@@ -215,7 +211,7 @@ window.addEventListener("scroll", reveal);
 @import 'style.css';
 
 .reveal{
-position: relative;
+
 transform: translateY(150px);
 opacity: 0;
 transition: 1s all ease;
@@ -230,4 +226,40 @@ opacity: 1;
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
 }
 
+.asset-dark{
+    visibility:hidden;
+    opacity:0}
+.is-loaded 
+.asset-light,
+.is-loaded 
+.asset-dark{
+    visibility:visible;
+    opacity:1}
+.asset-dark{display:none}
+.lights-off{color:#8595AE}
+.lights-off 
+.asset-light{display:none}
+.lights-off 
+.asset-dark{display:block}
+
+.teste-dos-cria{
+    
+    width: 1000px;
+}
+
+.teste {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+
+.hero-media-image {
+    margin: 0 auto;
+    box-shadow: 48px 16px 48px rgba(24, 37, 56, 0.12);
+    border-radius: 4px;
+    box-shadow: 48px 16px 48px rgba(0, 0, 0, 0.2);
+    transform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scaleY(0.95) translatex(2%) ease;
+}
 </style>

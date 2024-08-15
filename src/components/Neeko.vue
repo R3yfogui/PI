@@ -243,7 +243,7 @@ window.addEventListener("scroll", reveal);
             </footer>
         </div>
 
-
+     
     </body>
 
 

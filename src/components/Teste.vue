@@ -24,7 +24,14 @@ import { onMounted } from 'vue';
     
     onMounted(() => {
       let rellax = new Rellax('.rellax');
+      let rellax1 = new Rellax('.rellax1', {
+    horizontal:true
+
+    
+  });
     })
+
+    
 </script>
 
 
@@ -32,10 +39,10 @@ import { onMounted } from 'vue';
   
      <section class="oink">
     
-      <img class="reveal" src="@/assets/img/céu.png" alt="céu" id="ceu">
-      <img class="estrelasp" src="" alt="estrelas" id="estrelas">
-      <img class="reveal" src="@/assets/img/lua.png" alt="lua" id="lua">
-      <img class="one rellax" data-rellax-speed="4" src="@/assets/img/montanhas.png" alt="montanhas " id="montanhas">
+      <img class="reveal rellax" data-rellax-speed="-4" src="@/assets/img/céu.png" alt="céu" id="ceu">
+      <img class="estrelas rellax" data-rellax-speed="-7" src="@/assets/img/estrelas.png" alt="estrelas" id="estrelas">
+      <img class="reveal rellax" data-rellax-speed="-12"  src="@/assets/img/lua.png" alt="lua" id="lua">
+      <img class="one rellax rellax1" data-rellax-speed="-5" src="@/assets/img/montanhas.png" alt="montanhas " id="montanhas">
     
     <h2 id="texto">LIVROS</h2>
     <a href="#sec" id="btn">Explorar</a>

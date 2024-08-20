@@ -24,12 +24,11 @@ import { onMounted } from 'vue';
     
     onMounted(() => {
       let rellax = new Rellax('.rellax');
-      let rellax1 = new Rellax('.rellax1', {
-    horizontal:true
+      
 
     
   });
-    })
+    
 
     
 </script>
@@ -39,19 +38,17 @@ import { onMounted } from 'vue';
   
      <section class="oink">
     
-      <img class="reveal rellax" data-rellax-speed="-4" src="@/assets/img/céu.png" alt="céu" id="ceu">
+      <img class=" rellax" data-rellax-speed="1" src="@/assets/img/céu.png" alt="céu" id="ceu">
       <img class="estrelas rellax" data-rellax-speed="-7" src="@/assets/img/estrelas.png" alt="estrelas" id="estrelas">
-      <img class="reveal rellax" data-rellax-speed="-12"  src="@/assets/img/lua.png" alt="lua" id="lua">
-      <img class="one rellax rellax1" data-rellax-speed="-5" src="@/assets/img/montanhas.png" alt="montanhas " id="montanhas">
+      <img class=" rellax" data-rellax-speed="-11"  src="@/assets/img/lua.png" alt="lua" id="lua">
+      <img class="one rellax" data-rellax-speed="-5" src="@/assets/img/montanhas.png" alt="montanhas " id="montanhas">
     
-    <h2 id="texto">LIVROS</h2>
+      <h2 id="texto">LIVROS</h2>
     <a href="#sec" id="btn">Explorar</a>
     <img class="" src="@/assets/img/rua.png" alt="rua" id="rua">
   </section>
   
   <div class="sec" id="sec">
-
-
     <h2 class="reveal">Parallax</h2>
     <p class="reveal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis corporis in expedita quibusdam
       nostrum mollitia optio, ab dolores? Ab beatae blanditiis eum ipsa velit deserunt eaque voluptate quis a esse Lorem
@@ -75,13 +72,68 @@ import { onMounted } from 'vue';
       doloribus voluptas dignissimos consectetur dolor dolorem animi magni exercitationem?</p>
   </div>
 
+  <div id="parallax-wrapper">
+  
+  
+  <div>
+    <div class="p-one parallax-inner">
+      <h2>PIPIPI POPOPO</h2>
+    </div>
+  </div>
+  <div>
+    <div class="content-text">
+      <span class="first-letter red"></span>
+      
+      <div class="line-break"></div>
+    </div>
+  </div>
+</div>
+
 
 
 
 </template>
 
 <style scoped>
-
+#parallax-wrapper{
+  width: 100%;
+}
+.p-one{
+ background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(@/assets/img/ar.jpg); 
+}
+.parallax-inner{
+  position:relative;
+  min-height: 500px;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.parallax-inner > h2{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -20.5px;
+  width: 100%;
+  text-align: center;
+}
+.content-text p{
+  padding: 25px 50px 25px 50px;
+  font-weight: 400px;
+  text-align: justify;
+  line-height: 24px;
+}
+.first-letter{
+  float: left;
+  font-weight: 400;
+  font-size: 84px;
+  line-height: 64px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-left: 4px;
+}
 
 .oink {
   background-color: #0d0422;
@@ -283,4 +335,9 @@ body {
   background-attachment: fixed;
 }
 
+@media screen and (max-width:500px){
+  .parallax-inner{
+    min-height: 350px;
+    background-size: cover;
+  }}
 </style>

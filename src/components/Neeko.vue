@@ -257,7 +257,7 @@ window.addEventListener("scroll", reveal);
     margin: 0;
 }
 
-.hero {}
+
 
 @import 'style.css';
 
@@ -326,7 +326,7 @@ window.addEventListener("scroll", reveal);
     transition: 1s all ease;
 }
 
-.hero-media-image.active {}
+
 
 .mesalva {
     display: block;

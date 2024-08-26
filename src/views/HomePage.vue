@@ -2,14 +2,14 @@
 <script setup>
 
 import PreLoader from '@/components/PreLoader.vue';
-import Cards from '@/components/Cards.vue';
+import SitePrincipal from '@/components/SitePrincipal.vue';
 
 
 </script>
 
 <template>
     <PreLoader></PreLoader>
-    <Cards></Cards>
+    <SitePrincipal></SitePrincipal>
   
 
   

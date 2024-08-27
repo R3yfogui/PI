@@ -3,6 +3,7 @@
 
 import PreLoader from '@/components/PreLoader.vue';
 import SitePrincipal from '@/components/SitePrincipal.vue';
+import Footer from '@/components/Footer.vue';
 
 
 </script>
@@ -10,6 +11,8 @@ import SitePrincipal from '@/components/SitePrincipal.vue';
 <template>
     <PreLoader></PreLoader>
     <SitePrincipal></SitePrincipal>
+    <Footer></Footer>
+
   
 
   

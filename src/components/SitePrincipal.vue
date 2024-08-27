@@ -1,3 +1,6 @@
+<script>
+import Carousel from '@/components/Carousel.vue';
+</script>
 <template>
 
     <body>
@@ -35,8 +38,10 @@
 
             <img class="parallax__bg" src="../assets/homeImg/bg.jpg" alt="" />
             <img class="parallax__dust" src="../assets/homeImg/dust.webp" alt="" />
-            <img class="parallax__foreground-back" src="../assets/homeImg/foreground-back.webp" alt="" />
-            <img class="parallax__foreground-front" src="../assets/homeImg/foreground-front.webp" alt="" />
+            <img class="parallax__foreground-back" style="margin-bottom: 0%;"
+                src="../assets/homeImg/foreground-back.webp" alt="" />
+            <img class="parallax__foreground-front" style="margin-bottom: 1%;"
+                src="../assets/homeImg/foreground-front.webp" alt="" />
             <img class="parallax__jax" src="../assets/homeImg/jax.webp" alt="" />
             <img class="parallax__luna" src="../assets/homeImg/luna.webp" alt="" />
             <img class="parallax__manny" src="../assets/homeImg/manny.webp" alt="" />
@@ -106,6 +111,20 @@
                     ducimus consectetur suscipit dolore sed tempora, assumenda corporis
                     eius quasi quas pariatur.
                 </p>
+                <div id="parallax-wrapper">
+                    <div>
+                        <div class="p-one parallax-inner">
+                            <h2>PIPIPI POPOPO</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content-text">
+                            <span class="first-letter red"></span>
+
+                            <div class="line-break"></div>
+                        </div>
+                    </div>
+                </div>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
                     aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
@@ -118,12 +137,14 @@
                     ducimus consectetur suscipit dolore sed tempora, assumenda corporis
                     eius quasi quas pariatur.
                 </p>
+                <Carousel></Carousel>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
                     aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
                     ducimus consectetur suscipit dolore sed tempora, assumenda corporis
                     eius quasi quas pariatur.
                 </p>
+                
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
                     aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
@@ -157,10 +178,50 @@
             </div>
         </main>
     </body>
+    
 
 </template>
 
 <style scoped>
+#parallax-wrapper{
+  width: 100%;
+}
+.p-one{
+ background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(@/assets/img/ar.jpg); 
+}
+.parallax-inner{
+  position:relative;
+  min-height: 500px;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.parallax-inner > h2{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -20.5px;
+  width: 100%;
+  text-align: center;
+}
+.content-text p{
+  padding: 25px 50px 25px 50px;
+  font-weight: 400px;
+  text-align: justify;
+  line-height: 24px;
+}
+.first-letter{
+  float: left;
+  font-weight: 400;
+  font-size: 84px;
+  line-height: 64px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-left: 4px;
+}
 /* arabic */
 @font-face {
     font-family: 'Rubik';
@@ -280,130 +341,138 @@
     src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FV0U1.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 100vh;
-  background: #232427;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #232427;
 }
 
-body .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 40px 0;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1200px;
+    margin: 40px 0;
 }
 
 body .container .card {
-  position: relative;
-  min-width: 320px;
-  height: 440px;
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  margin: 30px;
-  transition: 0.5s;
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+    transition: 0.5s;
 }
 
 body .container .card:nth-child(1) .box .content a {
-  background: #2196f3;
+    background: #2196f3;
 }
 
 body .container .card:nth-child(2) .box .content a {
-  background: #e91e63;
+    background: #e91e63;
 }
 
 body .container .card:nth-child(3) .box .content a {
-  background: #23c186;
+    background: #23c186;
 }
 
 body .container .card .box {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  background: #2a2b2f;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: 0.5s;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 body .container .card .box:hover {
-  transform: translateY(-50px);
+    transform: translateY(-50px);
 }
 
 body .container .card .box:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.03);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
 }
 
 body .container .card .box .content {
-  padding: 20px;
-  text-align: center;
+    padding: 20px;
+    text-align: center;
 }
 
 body .container .card .box .content h2 {
-  position: absolute;
-  top: -10px;
-  right: 30px;
-  font-size: 8rem;
-  color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
 }
 
 body .container .card .box .content h3 {
-  font-size: 1.8rem;
-  color: #fff;
-  z-index: 1;
-  transition: 0.5s;
-  margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
 }
 
 body .container .card .box .content p {
-  font-size: 1rem;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.9);
-  z-index: 1;
-  transition: 0.5s;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
 }
 
 body .container .card .box .content a {
-  position: relative;
-  display: inline-block;
-  padding: 8px 20px;
-  background: black;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-  margin-top: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
 }
+
 body .container .card .box .content a:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-  background: #fff;
-  color: #000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #ffffff;
+}
+
+.wrapper p {
+    color: #fff;
+    text-align: center;
 }
 
 
@@ -428,7 +497,7 @@ body .container .card .box .content a:hover {
 
 .primary-header,
 .hero {
-    --parallax-speed: 10;
+    --parallax-speed: -1;
     z-index: 10;
 }
 
@@ -447,7 +516,7 @@ body .container .card .box .content a:hover {
 }
 
 .parallax__luna {
-    --parallax-speed: 10;
+    --parallax-speed: 8;
     z-index: 3;
 }
 
@@ -457,7 +526,7 @@ body .container .card .box .content a:hover {
 }
 
 .parallax__jax {
-    --parallax-speed: 12;
+    --parallax-speed: 7;
     z-index: 5;
 }
 
@@ -507,7 +576,7 @@ body {
     /* for demo only */
     text-transform: uppercase;
     /* for demo only */
-    min-height: 300vh;
+
     /* for demo only */
 }
 
@@ -516,7 +585,7 @@ img {
     max-width: 100%;
 }
 
-.wrapper {
+.wrapper     {
     width: min(65rem, 100% - 4rem);
     margin-inline: auto;
 }
@@ -603,6 +672,18 @@ img {
         opacity: 0.5;
         filter: blur(5rem);
         translate: -50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    body {
+        text-transform: none;
+        width: 115%;
     }
 }
 </style>

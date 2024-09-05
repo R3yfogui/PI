@@ -1,257 +1,211 @@
 <template>
-    
-    <nav>
-      <div class="navbar">
-        <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>  
-          <div class="menu-items">
-            
-            <li><a href="#"><router-link to="/">Home</router-link></a></li>
-            <li><a href="#"> <router-link to="/filmes">Filmes</router-link></a></li>
-            <li><a href="#"><router-link to="/carrinho">Carrinho</router-link></a></li>
-            <li><a href="#"> <router-link to="/filmes">Filmes</router-link></a></li>
-            <li><a href="#"><router-link to="/tv">Programas de TV</router-link></a></li>
-          </div>
-        </div>
-      </div>
-    </nav>
-  
+  <div style="z-index: 1000;" class="bg-black h-screen w-screen flex ">
+	<!-- container -->
+
+	<aside style="z-index: 1000;"
+		class="flex flex-col items-center bg-white text-gray-700 shadow h-full">
+		<!-- Side Nav Bar-->
+
+		<div class="h-16 flex items-center w-full">
+			<!-- Logo Section -->
+			<a class="h-6 w-6 mx-auto" href="http://svelte.dev/">
+				<img
+					class="h-6 w-6 mx-auto"
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/512px-Svelte_Logo.svg.png"
+					alt="svelte logo" />
+			</a>
+		</div>
+
+		<ul>
+			<!-- Items Section -->
+			<li class="hover:bg-gray-100">
+				<a
+					href="."
+					class="h-16 px-6 flex flex justify-center items-center w-full
+					focus:text-orange-500">
+					<svg
+						class="h-5 w-5"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<polyline
+							points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+						<path
+							d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0
+							2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0
+							0-1.79 1.11z"></path>
+					</svg>
+
+				</a>
+			</li>
+
+			<li class="hover:bg-gray-100">
+				<a
+					href="."
+					class="h-16 px-6 flex flex justify-center items-center w-full
+					focus:text-orange-500">
+					<svg
+						class="h-5 w-5"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<path
+							d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+					</svg>
+
+				</a>
+			</li>
+
+			<li class="hover:bg-gray-100">
+				<a
+					href="."
+					class="h-16 px-6 flex flex justify-center items-center w-full
+					focus:text-orange-500">
+
+					<svg
+						class="h-5 w-5"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<polyline points="3 6 5 6 21 6"></polyline>
+						<path
+							d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2
+							0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+					</svg>
+
+				</a>
+			</li>
+
+			<li class="hover:bg-gray-100">
+				<a
+					href="."
+					class="h-16 px-6 flex flex justify-center items-center w-full
+					focus:text-orange-500">
+					<svg
+						class="h-5 w-5"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<circle cx="9" cy="21" r="1"></circle>
+						<circle cx="20" cy="21" r="1"></circle>
+						<path
+							d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0
+							2-1.61L23 6H6"></path>
+					</svg>
+
+				</a>
+			</li>
+
+			<li class="hover:bg-gray-100">
+				<a
+					href="."
+					class="h-16 px-6 flex flex justify-center items-center w-full
+					focus:text-orange-500">
+					<svg
+						class="h-5 w-5"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<circle cx="12" cy="12" r="3"></circle>
+						<path
+							d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1
+							0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0
+							0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2
+							2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0
+							0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1
+							0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0
+							0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65
+							0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0
+							1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0
+							1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2
+							0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0
+							1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0
+							2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0
+							0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65
+							1.65 0 0 0-1.51 1z"></path>
+					</svg>
+				</a>
+			</li>
+
+			<li class="hover:bg-gray-100">
+				<a
+					href="."
+					class="h-16 px-6 flex flex justify-center items-center w-full
+					focus:text-orange-500">
+					<svg
+						class="h-5 w-5"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<path
+							d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+						<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+					</svg>
+				</a>
+			</li>
+
+		</ul>
+
+		<div class="mt-auto h-16 flex items-center w-full">
+			<!-- Action Section -->
+			<button
+				class="h-16 w-10 mx-auto flex flex justify-center items-center
+				w-full focus:text-orange-500 hover:bg-red-200 focus:outline-none">
+				<svg
+					class="h-5 w-5 text-red-700"
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round">
+					<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+					<polyline points="16 17 21 12 16 7"></polyline>
+					<line x1="21" y1="12" x2="9" y2="12"></line>
+				</svg>
+
+			</button>
+		</div>
+
+	</aside>
+</div>
 </template>
-
-<style scoped>
-
-button {
-	border: none;
-	outline: none;
-	padding: 10px 20px;
-	border-radius: 50px;
-	color: #333;
-	background: #fff;
-	margin-bottom: 50px;
-	box-shadow: 0 3px 20px 0 #0000003b;
-}
-button:hover{
-	cursor: pointer;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-
-
-h3{
-  color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
-  margin-left: 1rem;
-}
-
-.iconM{
-  font-size: 18px;
-  margin-left: 170px;
-  color: #2f89fc;
-}
-
-.icon{
-  margin-right: 8px;
-}
-
-.body li{
-  transition: 1s all;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  padding: 15px;
-  margin-left: -40px;
-  margin-top: 0px;
-  color: #fff;
-  list-style: none;
-  display: block;
-  border-top-right-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
-}
-
-li:hover{
-  transition: 1s all;
-  color: #2f89fc;
-  background-color: rgba(42, 56, 65, 0.82);
-  border-top-right-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
-  cursor: pointer;
-}
-
-.body > li{
-  float: left;
-}
-
-.body li ul{
-  background: #1E2B32;
-  margin-left: 280px;
-  margin-top: -38px;
-  display: none;
-  position: absolute;
-  border-top-right-radius: 15px 15px;
-  border-bottom-right-radius: 15px 15px;
-}
-
-.body li:hover > ul{
-  display: block;
-  cursor: pointer;
-}
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-
-.container {
-  max-width: 1050px;
-  width: 90%;
-  margin: auto;
-}
-
-.navbar {
-  z-index: 10000;
-  background-color: #0d0422;
-  border: 2px solid #fff;
-}
-
-
-.navbar {
-  width: 100%;
-  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 62px;
-}
-
-.navbar .menu-items {
-  display: flex;
-  width: 15%;
-  position: fixed;
-  background-color: #fff;
-  z-index: 100;
-
-}
-
-.navbar .nav-container li {
-  list-style: none;
-}
-
-.navbar .nav-container a {
-  text-decoration: none;
-  color: #0e2431;
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding: 0.7rem;
-}
-
-.navbar .nav-container a:hover{
-    font-weight: bolder;
-}
-
-.nav-container {
-  display: block;
-  position: relative;
-  height: 60px;
-}
-
-.nav-container .checkbox {
-  position: absolute;
-  display: block;
-  height: 32px;
-  width: 32px;
-  top: 20px;
-  left: 20px;
-  z-index: 5;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.nav-container .hamburger-lines {
-  display: block;
-  height: 26px;
-  width: 32px;
-  position: absolute;
-  top: 17px;
-  left: 20px;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.nav-container .hamburger-lines .line {
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 10px;
-  background: #0e2431;
-}
-
-.nav-container .hamburger-lines .line1 {
-  transform-origin: 0% 0%;
-  transition: transform 0.4s ease-in-out;
-}
-
-.nav-container .hamburger-lines .line2 {
-  transition: transform 0.2s ease-in-out;
-}
-
-.nav-container .hamburger-lines .line3 {
-  transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out;
-}
-
-.navbar .menu-items {
-  padding-top: 10px;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  transform: translate(-150%);
-  display: flex;
-  flex-direction: column;
-
-  padding-left: 0px;
-  transition: transform 0.5s ease-in-out;
-  text-align: center;
-  right: 85%;
-  top: 0%;
-}
-
-.navbar .menu-items li {
-  margin-bottom: 1.2rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.logo {
-  position: absolute;
-  top: 5px;
-  right: 15px;
-  font-size: 1.2rem;
-  color: #0e2431;
-}
-
-.nav-container input[type="checkbox"]:checked ~ .menu-items {
-  transform: translateX(0);
-}
-
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-  transform: rotate(45deg);
-}
-
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-  transform: scaleY(0);
-}
-
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-  transform: rotate(-45deg);
-}
-
-.nav-container input[type="checkbox"]:checked ~ .logo{
-  display: none;
-}
-
-</style>

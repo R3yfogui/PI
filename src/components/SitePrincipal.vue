@@ -478,11 +478,13 @@ body .container .card .box .content a:hover {
 
 .parallax {
     /* overflow: hidden; */
+    width: 1980px;
     position: relative;
     z-index: 0;
     height: 750px;
     display: grid;
     grid-template-areas: "stack";
+    
 }
 
 .parallax>* {

@@ -1,5 +1,5 @@
 <template>
-  <div style="z-index: 1000;" class="bg-black h-screen w-screen flex ">
+  <div style="z-index: 1000;" class=" h-screen w-screen flex static">
 	<!-- container -->
 
 	<aside style="z-index: 1000;"
@@ -209,3 +209,10 @@
 	</aside>
 </div>
 </template>
+
+<style scoped>
+.static {
+	position: fixed;
+}
+
+</style>

@@ -137,7 +137,7 @@ import { onMounted } from 'vue';
 
 .oink {
   background-color: #0d0422;
-  z-index: 100;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,6 +156,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background: linear-gradient(#2b1055, #7597de);
+  z-index: 1;
 }
 
 header {
@@ -219,7 +220,7 @@ section::before {
   width: 100%;
   height: 100px;
   background: linear-gradient(to top, #0d0422, transparent);
-  z-index: 1000;
+  z-index: 100;
 }
 
 section img {

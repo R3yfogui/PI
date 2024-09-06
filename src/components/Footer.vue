@@ -30,15 +30,14 @@ INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh
 
 .footer{
 background:#000;
-padding:30px 0px;
+padding: 20px 0px;
 font-family: 'Play', sans-serif;
 text-align:center;
 }
 
 .footer .row{
 width:100%;
-margin:1% 0%;
-padding:0.6% 0%;
+padding:1px;
 color:gray;
 font-size:0.8em;
 }
@@ -47,6 +46,7 @@ font-size:0.8em;
 text-decoration:none;
 color:gray;
 transition:0.5s;
+margin: 2px;
 }
 
 .footer .row a:hover{

@@ -36,15 +36,15 @@ import Carousel from '@/components/Carousel.vue';
                 </div>
             </div>
 
-            <img class="parallax__bg" src="../assets/homeImg/bg.jpg" alt="" />
+            <img class="parallax__bg" src="../assets/img/bghsr.webp" alt="" />
             <img class="parallax__dust" src="../assets/homeImg/dust.webp" alt="" />
             <img class="parallax__foreground-back" style="margin-bottom: 0%;"
                 src="../assets/homeImg/foreground-back.webp" alt="" />
             <img class="parallax__foreground-front" style="margin-bottom: 1%;"
                 src="../assets/homeImg/foreground-front.webp" alt="" />
-            <img class="parallax__jax" src="../assets/homeImg/jax.webp" alt="" />
+            <img style="position: fixed; width: 79%; margin-left: 40%; margin-bottom: 50%;" class="parallax__jax" src="../assets/homeImg/firefly.webp" alt="" />
             <img class="parallax__luna" src="../assets/homeImg/luna.webp" alt="" />
-            <img class="parallax__manny" src="../assets/homeImg/manny.webp" alt="" />
+            <img style="width: 20%;" class="parallax__manny" src="../assets/homeImg/lg.webp" alt="" />
             <img class="parallax__rays" src="../assets/homeImg/rays.webp" alt="" />
         </div>
 
@@ -113,9 +113,13 @@ import Carousel from '@/components/Carousel.vue';
                 </p>
                 <div id="parallax-wrapper">
                     <div>
+                        <div class="p-one1">
+                            <img style="position: absolute; z-index: 1000; width: 55%; height: 22%;" src="../assets/img/border.png" alt="">
                         <div class="p-one parallax-inner">
                             <h2>PIPIPI POPOPO</h2>
                         </div>
+                    </div>
+                        
                     </div>
                     <div>
                         <div class="content-text">
@@ -177,7 +181,9 @@ import Carousel from '@/components/Carousel.vue';
                 </p>
             </div>
         </main>
+        
     </body>
+    
     
 
 </template>
@@ -187,7 +193,12 @@ import Carousel from '@/components/Carousel.vue';
   width: 100%;
 }
 .p-one{
- background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(@/assets/img/ar.jpg); 
+ background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(@/assets/img/sads.png); 
+}
+
+.p-one1{
+    width: 100%;
+ 
 }
 .parallax-inner{
   position:relative;
@@ -195,6 +206,7 @@ import Carousel from '@/components/Carousel.vue';
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
+  border-radius: 30px;
 }
 .parallax-inner > h2{
   color: #fff;
@@ -357,7 +369,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     min-height: 100vh;
-    background: #232427;
+    background: hsl(238, 100%, 6%);
 }
 
 .container {
@@ -507,7 +519,7 @@ body .container .card .box .content a:hover {
     --parallax-speed: -1;
 
     z-index: 1;
-    min-height: 100%;
+    
     width: 100%;
     object-fit: cover;
 }
@@ -528,8 +540,9 @@ body .container .card .box .content a:hover {
 }
 
 .parallax__jax {
-    --parallax-speed: 7;
+    --parallax-speed: 3;
     z-index: 5;
+    
 }
 
 .parallax__rays {

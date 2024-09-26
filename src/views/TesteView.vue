@@ -13,6 +13,7 @@ import Footer from '@/components/Footer.vue';
     <PreLoader></PreLoader>
     <Teste></Teste>
     <Footer></Footer>
+
     
     
   

@@ -33,6 +33,7 @@ background:#000;
 padding: 20px 0px;
 font-family: 'Play', sans-serif;
 text-align:center;
+z-index: 247000;
 }
 
 .footer .row{

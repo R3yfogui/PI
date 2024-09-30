@@ -36,7 +36,7 @@ export default {
 <template>
     <div class="silvio">
     <swiper
-      :breakpoints="{ 200:{ slidesPerView:5 }, 900:{ slidesPerView:5, } }"
+      :breakpoints="{ 200:{ slidesPerView:5 }, 900:{ slidesPerView:3, } }"
       :modules="modules"
       :slides-per-view="5"
       :space-between="50"
@@ -80,25 +80,25 @@ export default {
 
 }
 .swiper-slide:nth-child(1n) {
-  background-color: palevioletred;
+  
   
 }
 .swiper-slide:nth-child(2n) {
-  background-color: skyblue;
+  
 }
 .swiper-slide:nth-child(3n) {
-  background-color: peru;
+  
 }
 .swiper-slide:nth-child(4n) {
-  background-color: cadetblue;
+  
 }
 .swiper-slide:nth-child(5n) {
-  background-color: plum;
+  
 }
 .swiper-slide:nth-child(6n) {
-  background-color: goldenrod;
+  
 }
 .swiper-slide:nth-child(7n) {
-  background-color: palegreen;
+  
 }
 </style>

@@ -45,10 +45,11 @@
 					<div class="login-wrap">
 
 						<div class="wrapper">
-							<a href="#!" role="button" class="close" aria-label="close this modal"> </a>
+							
 							<div class="title">
 								Login Form
 							</div>
+							<a href="#!" role="button" class="close checkbox" style="justify-content: center; align-items: center; border-radius: 20px; position: relative;  width: 50px; height: 50px; z-index: 100000; background-color: white;" aria-label="close this modal"> X </a>
 							<form action="#">
 								<div class="field">
 									<input type="text" required>

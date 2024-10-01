@@ -1,5 +1,5 @@
 <script>
-import Carousel from '@/components/Carousel.vue';
+ 
 </script>
 <template>
 
@@ -38,18 +38,38 @@ import Carousel from '@/components/Carousel.vue';
 
             <img class="parallax__bg" src="../assets/img/bghsr.webp" alt="" />
             <img class="parallax__dust" src="../assets/homeImg/dust.webp" alt="" />
-            <img class="parallax__foreground-back" style="margin-bottom: 0%;"
+            <img class="parallax__foreground-back" style="margin-bottom: 70%;"
                 src="../assets/homeImg/foreground-back.webp" alt="" />
-            <img class="parallax__foreground-front" style="margin-bottom: 1%;"
+            <img class="parallax__foreground-front" style="margin-bottom: 70%;"
                 src="../assets/homeImg/foreground-front.webp" alt="" />
-            <img style="position: fixed; width: 79%; margin-left: 40%; margin-bottom: 50%;" class="parallax__jax" src="../assets/homeImg/firefly.webp" alt="" />
+
+            <img style="position: sticky; width: 79%; margin-left: 40%; margin-bottom: 50%;" class="parallax__jax" src="../assets/homeImg/firefly.webp" alt="" />
             <img class="parallax__luna" src="../assets/homeImg/luna.webp" alt="" />
             <img style="width: 20%;" class="parallax__manny" src="../assets/homeImg/lg.webp" alt="" />
             <img class="parallax__rays" src="../assets/homeImg/rays.webp" alt="" />
         </div>
+        
 
         <main class="main-content">
+            
             <div class="wrapper">
+                <div id="parallax-wrapper">
+                    <div>
+                        <div class="p-one1">
+                        <div class="p-one parallax-inner">
+                            <h2>PIPIPI POPOPO</h2>
+                        </div>
+                    </div>
+                        
+                    </div>
+                    <div>
+                        <div class="content-text">
+                            <span class="first-letter red"></span>
+
+                            <div class="line-break"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="container">
                     <div class="card">
                         <div class="box">
@@ -111,25 +131,16 @@ import Carousel from '@/components/Carousel.vue';
                     ducimus consectetur suscipit dolore sed tempora, assumenda corporis
                     eius quasi quas pariatur.
                 </p>
-                <div id="parallax-wrapper">
-                    <div>
-                        <div class="p-one1">
-                            <img style="position: absolute; z-index: 1000; width: 55%; height: 22%;" src="../assets/img/border.png" alt="">
-                        <div class="p-one parallax-inner">
-                            <h2>PIPIPI POPOPO</h2>
-                        </div>
-                    </div>
-                        
-                    </div>
-                    <div>
-                        <div class="content-text">
-                            <span class="first-letter red"></span>
+                
+                
+            </div>
+            
+            
+        </main>
+       
 
-                            <div class="line-break"></div>
-                        </div>
-                    </div>
-                </div>
-                <p>
+  
+    <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
                     aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
                     ducimus consectetur suscipit dolore sed tempora, assumenda corporis
@@ -179,16 +190,157 @@ import Carousel from '@/components/Carousel.vue';
                     ducimus consectetur suscipit dolore sed tempora, assumenda corporis
                     eius quasi quas pariatur.
                 </p>
-            </div>
-        </main>
+                
+  
+
+  
         
+                
     </body>
+   
     
     
 
 </template>
 
 <style scoped>
+.seila{
+  display: flex;
+  justify-content: center;
+}
+.container1{
+  z-index: 1000;
+  max-width: 1350px;
+  width: 100%;
+  overflow: hidden;
+}
+.container1 .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 120%;
+  transition: 1s;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.container1 .main-card .cards{
+  width: calc(100% / 1 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  height: 400px;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #FF676D;
+  margin-bottom: 14px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .job{
+  font-size: 20px;
+  color: #FF676D;
+}
+.card .content .media-icons{
+  margin-top: 10px;
+  display: flex;
+}
+.media-icons a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #FF676D;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover{
+  color: #FF676D;
+  background-color: #fff;
+  border-color: #FF676D;
+}
+ .container1 .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button1 label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button1 label.active{
+  width: 35px;
+}
+#one:checked ~ .button1 .one{
+  width: 35px;
+}
+#one:checked ~ .button1 .two{
+  width: 15px;
+}
+#two:checked ~ .button1 .one{
+  width: 15px;
+}
+#two:checked ~ .button1 .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+
 #parallax-wrapper{
   width: 100%;
 }

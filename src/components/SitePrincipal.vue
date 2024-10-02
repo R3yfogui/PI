@@ -38,12 +38,10 @@
 
             <img class="parallax__bg" src="../assets/img/bghsr.webp" alt="" />
             <img class="parallax__dust" src="../assets/homeImg/dust.webp" alt="" />
-            <img class="parallax__foreground-back" style="margin-bottom: 70%;"
-                src="../assets/homeImg/foreground-back.webp" alt="" />
-            <img class="parallax__foreground-front" style="margin-bottom: 70%;"
-                src="../assets/homeImg/foreground-front.webp" alt="" />
+            
+            
 
-            <img style="position: sticky; width: 79%; margin-left: 40%; margin-bottom: 50%;" class="parallax__jax" src="../assets/homeImg/firefly.webp" alt="" />
+            <img style="position: fixed; width: 79%; margin-left: 40%; margin-bottom: 50%;" class="parallax__jax" src="../assets/homeImg/firefly.webp" alt="" />
             <img class="parallax__luna" src="../assets/homeImg/luna.webp" alt="" />
             <img style="width: 20%;" class="parallax__manny" src="../assets/homeImg/lg.webp" alt="" />
             <img class="parallax__rays" src="../assets/homeImg/rays.webp" alt="" />

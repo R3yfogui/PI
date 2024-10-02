@@ -7,20 +7,19 @@
 		<aside style="z-index: 1000;" class="flex flex-col items-center bg-white text-gray-700 shadow h-full">
 			<!-- Side Nav Bar-->
 
-			<div class="h-16 flex items-center w-full">
+			<div class="h-16 flex items-center w-full hover">
 				<!-- Logo Section -->
-				<a class="h-6 w-6 mx-auto" href="http://svelte.dev/">
-					<img class="h-6 w-6 mx-auto"
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/512px-Svelte_Logo.svg.png"
-						alt="svelte logo" />
+				<a class="h-6 w-6 mx-auto" href="/teste">
+					<h1 class="h-5 w-5">home</h1>
 				</a>
 			</div>
 
 
 			<ul>
 				<!-- Items Section -->
-				<li class="hover:bg-gray-100">
-					<a href="#modal" role="button" class="h-16 px-6 flex flex justify-center items-center w-full
+				<li class="h-16 px-6 flex flex justify-center items-center w-full
+				focus:text-orange-500 hover">
+					<a href="/about" role="button" class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500 button button__link">
 						<svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -34,9 +33,10 @@
 					</a>
 
 				</li>
-				<li class="hover:bg-gray-100">
-					<div>
-						<a href="#modal" role="button" class="button button__link">Modal Trigger</a>
+				<li class="hover:bg-gray-100 hover">
+					<div class="h-16 px-6 flex flex justify-center items-center w-full
+					focus:text-orange-500 hover" >
+						<a href="#modal" role="button" class="button button__link">Modal </a>
 					</div>
 				</li>
 
@@ -80,13 +80,11 @@
 				</div>
 				<li class="hover:bg-gray-100">
 					<a href="." class="h-16 px-6 flex flex justify-center items-center w-full
-					focus:text-orange-500">
-						<svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+					focus:text-orange-500 hover">
+						<a href="/#" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
 							stroke-linecap="round" stroke-linejoin="round">
-							<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-						</svg>
-
+						</a> Loja
 					</a>
 				</li>
 
@@ -180,6 +178,10 @@
 </template>
 
 <style lang="scss">
+.hover:hover{
+	background-color: gray
+	
+}
 .wrapper .title {
 	font-size: 35px;
 	font-weight: 600;

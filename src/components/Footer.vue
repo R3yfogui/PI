@@ -28,12 +28,18 @@ INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh
 
 <style scoped>
 
+footer{
+    
+    
+}
+
 .footer{
+    position: sticky;
 background:#000;
 padding: 20px 0px;
 font-family: 'Play', sans-serif;
 text-align:center;
-z-index: 247000;
+z-index: 10000;
 }
 
 .footer .row{

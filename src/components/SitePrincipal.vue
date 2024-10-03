@@ -14,9 +14,9 @@
                         </div>
                         <nav class="primary-nav">
                             <ul role="list">
-                                <li><a href="#">Why join us</a></li>
-                                <li><a href="#">The founders</a></li>
-                                <li><a href="#">Beta info</a></li>
+                                <li><a href="#">Sei lá</a></li>
+                                <li><a href="#">Contato</a></li>
+                                <li><a href="#">Beta</a></li>
                             </ul>
                         </nav>
                         <div class="flex-group" aria-label="social links">
@@ -30,9 +30,9 @@
             <div class="hero">
                 <div class="wrapper">
                     <h1 class="hero__title">
-                        <span>Gear up!</span> We're going monster hunting!
+                        <span>Sei lá!</span> Sei lá mais ainda!
                     </h1>
-                    <button class="button">Sign up for beta</button>
+                    <button class="button">Cadastrar-se</button>
                 </div>
             </div>
 
@@ -129,6 +129,42 @@
                     ducimus consectetur suscipit dolore sed tempora, assumenda corporis
                     eius quasi quas pariatur.
                 </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
+                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
+                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
+                    eius quasi quas pariatur.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
+                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
+                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
+                    eius quasi quas pariatur.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
+                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
+                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
+                    eius quasi quas pariatur.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
+                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
+                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
+                    eius quasi quas pariatur.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
+                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
+                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
+                    eius quasi quas pariatur.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
+                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
+                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
+                    eius quasi quas pariatur.
+                </p>
                 
                 
             </div>
@@ -138,56 +174,7 @@
        
 
   
-    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <Carousel></Carousel>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
+    
                 
   
 
@@ -690,8 +677,8 @@ body .container .card .box .content a:hover {
 }
 
 .parallax__jax {
-    --parallax-speed: 3;
-    z-index: 5;
+    --parallax-speed: 1;
+    z-index: 1;
     
 }
 

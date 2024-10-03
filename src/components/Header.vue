@@ -10,7 +10,7 @@
 			<div class="h-16 flex items-center w-full hover">
 				<!-- Logo Section -->
 				<a class="h-6 w-6 mx-auto" href="/teste">
-					<h1 class="h-5 w-5">home</h1>
+					<h1 class="h-5 w-5">Home</h1>
 				</a>
 			</div>
 

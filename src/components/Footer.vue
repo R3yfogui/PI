@@ -20,7 +20,7 @@
 </div>
 
 <div class="row">
-INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh 
+INFERNO Copyright © 2021 Inferno - All rights reserved || 
 </div>
 </div>
 </footer>

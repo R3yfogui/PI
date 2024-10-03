@@ -19,8 +19,11 @@
 				<!-- Items Section -->
 				<li class="h-16 px-6 flex flex justify-center items-center w-full
 				focus:text-orange-500 hover">
+				    <router-link to="/about">
 					<a href="/about" role="button" class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500 button button__link">
+				    
+					
 						<svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
 							stroke-linecap="round" stroke-linejoin="round">
@@ -31,6 +34,7 @@
 						</svg>
 
 					</a>
+				    </router-link>
 
 				</li>
 				<li class="hover:bg-gray-100 hover">

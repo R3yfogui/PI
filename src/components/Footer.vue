@@ -28,10 +28,6 @@ INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh
 
 <style scoped>
 
-footer{
-    
-    
-}
 
 .footer{
     position: sticky;

@@ -50,7 +50,7 @@ import { onMounted } from 'vue';
   <section style="padding-top: 0px; height: 100%; padding-bottom: 0px; padding-right: 0px;">
   <div class="sec" id="sec">
     <h2 class="reveal">Parallax</h2>
-    <p class="reveal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis corporis in expedita quibusdam
+    <p class="reveal">Lorem 10ipsum dolor sit amet, consectetur adipisicing elit. Debitis corporis in expedita quibusdam
       nostrum mollitia optio, ab dolores? Ab beatae blanditiis eum ipsa velit deserunt eaque voluptate quis a esse Lorem
       ipsum, dolor sit amet consectetur adipisicing elit. Debitis sunt ullam tempore deleniti sapiente fuga quos libero
       accusamus ipsum vel molestiae omnis quasi voluptatibus ab, nobis facere, ratione sequi consequatur Lorem ipsum

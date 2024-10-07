@@ -47,7 +47,7 @@ import { onMounted } from 'vue';
     <a href="#sec" id="btn">Explorar</a>
     <img class="" src="@/assets/img/rua.png" alt="rua" id="rua">
   </section>
-  
+  <section style="padding-top: 0px; height: 100%; padding-bottom: 0px; padding-right: 0px;">
   <div class="sec" id="sec">
     <h2 class="reveal">Parallax</h2>
     <p class="reveal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis corporis in expedita quibusdam
@@ -71,7 +71,7 @@ import { onMounted } from 'vue';
       Nulla obcaecati facere accusantium voluptas repellat? Quis, aut. Maiores asperiores, sapiente iusto aliquam
       doloribus voluptas dignissimos consectetur dolor dolorem animi magni exercitationem?</p>
   </div>
-
+</section>
   <div id="parallax-wrapper">
   
   
@@ -141,6 +141,7 @@ import { onMounted } from 'vue';
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 
@@ -280,7 +281,10 @@ body {
 }
 
 .sec {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 100px;
   background: #0d0422;
 }

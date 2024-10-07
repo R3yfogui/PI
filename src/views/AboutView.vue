@@ -1,6 +1,6 @@
 <script setup>
 
-import Neeko from '@/components/Neeko.vue';
+import Neeko from '@/1hlck/Neeko.vue';
 
 </script>
 

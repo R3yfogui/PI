@@ -86,7 +86,7 @@
 					</div>
 				</div>
 				<li class="hover:bg-gray-100">
-					<router-link to="/" class="h-16 px-6 flex flex justify-center items-center w-full
+					<router-link to="/loja" class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500">
 					Loja
 				    </router-link>

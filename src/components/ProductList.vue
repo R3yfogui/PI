@@ -1,58 +1,58 @@
 <script setup>
-import { onMounted, watch } from 'vue';
-import { useProductStore } from '@/stores/product';
+import { onMounted, computed } from 'vue';
+import { useProdutoStore } from '@/stores/produto';
 
 import { formatDescription, formatPrice, formatTitle } from '@/helpers/format';
 
-const props = defineProps(['category_id']);
-const productStore = useProductStore();
 
-async function getProducts() {
-  if (props.category_id) {
-    await productStore.getProductsByCategory(props.category_id);
-  } else {
-    await productStore.getProducts();
-  }
+const productStore = useProdutoStore();
+
+async function getProdutos() {
+  
+    await productStore.getProdutos();
+  
 }
 
-watch(
-  () => props.category_id,
-  async () => {
-    await getProducts();
-  },
-);
+const products = computed(() => { return productStore.produtos })
+
+// watch(
+//   () => props.category_id,
+//   async () => {
+//     await getProducts();
+//   },
+// );
 
 onMounted(async () => {
-  await getProducts();
+  await getProdutos();
 });
 </script>
 
 <template>
   
   <div class="product-list">
-    <router-link :to="{ name: 'ProductAdd' }">
+    <!-- <router-link :to="{ name: 'ProductAdd' }">
       <button class="icon ">
         <i class="mdi mdi-plus" />
       </button>
-    </router-link>
-    <div v-if="productStore.products.length === 0">
+    </router-link> -->
+    <div v-if="products.length === 0">
       <p>Produtos não encontrados!!!</p>
     </div>
     <div
-      v-for="product in productStore.products"
+      v-for="product in products"
       :key="product.id"
       class="product-card"
     >
-      <div class="product-img-wrapper">
+      <!-- <div class="product-img-wrapper">
         <img :src="product.image?.url" alt="product.name" />
         <i class="mdi mdi-heart-outline" />
-      </div>
+      </div> -->
       <div class="product-title-price">
-        <p>{{ formatTitle(product.title) }}</p>
-        <p>{{ formatPrice(product.price * 1) }}</p>
+        <p>{{ formatTitle(product.nome) }}</p>
+        <p>{{ formatPrice(product.preco * 1) }}</p>
       </div>
       <div class="product-description-stars">
-        <p>{{ formatDescription(product.description) }}</p>
+        <p>{{ formatDescription(product.descricao) }}</p>
         <div class="stars">
           <i class="mdi mdi-star" />
           <i class="mdi mdi-star" />

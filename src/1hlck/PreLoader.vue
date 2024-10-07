@@ -14,24 +14,11 @@ import '../../node_modules/vue-preloader/dist/style.css'
     background-color="#141414"
     color="#ffffff"
     transition-type="fade-up"
-    :loading-speed="45"
+    :loading-speed="25"
     :transition-speed="1400"
     @loading-is-over="loadingIsOver"
     @transition-is-over="transitionIsOver"
   ></VuePreloader>
-</div>
-<div class="teste">
-  <VuePreloader
-  
-  background-color=""
-  color="#ffffff"
-    transition-type="fade-up"
-    :loading-speed="35"
-    :transition-speed="900"
-    @loading-is-over="loadingIsOver"
-    @transition-is-over="transitionIsOver"
-    
-  > </VuePreloader>
 </div>
 
 </template>

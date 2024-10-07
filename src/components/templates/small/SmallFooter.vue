@@ -1,89 +1,87 @@
-<script setup>
-import { ref } from 'vue';
-import { onBeforeRouteUpdate } from 'vue-router';
-
-const showMenu = ref(false);
-
-onBeforeRouteUpdate(() => {
-  showMenu.value = false;
-});
-
-</script>
 <template>
-  <div id="footerMenu" :style="{ display: showMenu ? 'block' : 'none' }">
-    <RouterLink to="/">
-      <i class="mdi mdi-home-outline" />
-      Home
-    </RouterLink>
-    <RouterLink to="/login">
-      <i class="mdi mdi-account" />
-      Login
-    </RouterLink>
+    
+  <footer>
+  <div class="footer">
+  <div class="row">
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <a href="#"><i class="fa fa-youtube"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
   </div>
-  <div class="icons">
-    <RouterLink to="/">
-      <i class="mdi mdi-home-outline" />
-      Home
-    </RouterLink>
-    <RouterLink to="/">
-      <i class="mdi mdi-account-circle-outline" />
-      Perfil
-    </RouterLink>
-    <RouterLink to="/">
-      <i class="mdi mdi-cart-outline" />
-      Carrinho
-    </RouterLink>
-
-    <div class="hamburger" @click="showMenu = !showMenu">
-      <i class="mdi mdi-menu" />
-      Menu
-    </div>
+  
+  <div class="row">
+  <ul>
+  <li><a href="#">Contact us</a></li>
+  <li><a href="#">Our Services</a></li>
+  <li><a href="#">Privacy Policy</a></li>
+  <li><a href="#">Terms & Conditions</a></li>
+  <li><a href="#">Career</a></li>
+  </ul>
   </div>
-</template>
-<style scoped>
-#footerMenu {
-    position: fixed;
-    bottom: 15%;
-    right: 0;
-
-    width: 20%;
-    border-top: #EEEEEE 1px solid;
-    background-color: white;
-
-    display: block;
-    padding: 1rem;
-}
-
-#footerMenu a {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    text-decoration: none;
-    color: #282828;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-
-.icons {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.icons a,
-.icons .hamburger {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #282828;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-.hamburger:hover {
-    cursor: pointer;
-}
-</style>
+  
+  <div class="row">
+  INFERNO Copyright © 2021 Inferno - All rights reserved || 
+  </div>
+  </div>
+  </footer>
+  </template>
+  
+  <style scoped>
+  
+  
+  .footer{
+      position: sticky;
+  background:#000;
+  padding: 20px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  z-index: 10000;
+  }
+  
+  .footer .row{
+  width:100%;
+  padding:1px;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  margin: 2px;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+  </style>

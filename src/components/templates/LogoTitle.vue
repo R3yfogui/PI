@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div class="logo">
-    <img src="@/assets/logo.png" alt="FakeStore Logo" />
+    <img src="" alt="FakeStore Logo" />
     <h2>FakeStore</h2>
   </div>
 </template>

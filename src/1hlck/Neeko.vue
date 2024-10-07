@@ -59,9 +59,16 @@ export default {
 
 <style scoped>
 .silvio{
+  display: flex;
+  z-index: 1000;
     flex-wrap: wrap-reverse;
     width: 100%;
     height: 100%;
+    margin-left: 110px;
+}
+.swiper{
+  position: relative;
+  z-index: 1000;
 }
 .swiper-slide img{
     border-radius: 30px;

@@ -738,6 +738,7 @@ img {
 .wrapper     {
     width: min(65rem, 100% - 4rem);
     margin-inline: auto;
+    
 }
 
 .flex-group {

@@ -163,6 +163,10 @@
 </template>
 
 <style scoped lang="scss">
+.wrapper {
+	background-color: #fff;
+	border-radius: 30px;
+}
 .hover:hover{
 	background-color: gray
 	

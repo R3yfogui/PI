@@ -1,9 +1,9 @@
 <script setup>
 
-import PreLoader from '@/components/PreLoader.vue';
-import Landing from '@/components/landing.vue';
+import PreLoader from '@/1hlck/PreLoader.vue';
+import Landing from '@/1hlck/landing.vue';
 
-import Footer from '@/components/Footer.vue';
+
 
 
 </script>
@@ -12,7 +12,7 @@ import Footer from '@/components/Footer.vue';
     
     <PreLoader></PreLoader>
     <Landing></Landing>
-    <Footer></Footer>
+    
 
     
     

@@ -47,12 +47,12 @@
 					</div>
 				</li>
 
-				<div class="modal-wrapper" id="modal">
+				<div class="modal-wrapper teste2" id="modal" style="background-color: #fff; z-index: 10000;">
 					<img src="../assets/img/bg.png" style="position: absolute;" alt="">
 					<div class="login-wrap">
 
 						<div class="wrapper">
-							
+							<div class="teste3">
 							<div class="title">
 								Login Form
 							</div>
@@ -83,6 +83,7 @@
 								</div>
 							</form>
 						</div>
+					 </div>
 					</div>
 				</div>
 				<li class="hover:bg-gray-100">
@@ -162,6 +163,11 @@
 </template>
 
 <style lang="scss">
+.teste2 form{
+	display: flex;
+	z-index: 100000;
+	background-color: #8a3030;
+}
 .hover:hover{
 	background-color: gray
 	

@@ -35,7 +35,7 @@
   padding: 20px 0px;
   font-family: 'Play', sans-serif;
   text-align:center;
-  z-index: 10000;
+  z-index: 100;
   }
   
   .footer .row{

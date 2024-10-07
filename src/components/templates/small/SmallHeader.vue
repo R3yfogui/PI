@@ -46,9 +46,8 @@
 						<a href="#modal" role="button" class="button button__link">Modal </a>
 					</div>
 				</li>
-
 				<div class="modal-wrapper" id="modal">
-					<img src="../assets/img/bg.png" style="position: absolute;" alt="">
+					
 					<div class="login-wrap">
 
 						<div class="wrapper">

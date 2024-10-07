@@ -625,7 +625,7 @@ body .container .card .box .content a:hover {
 
 .parallax {
     /* overflow: hidden; */
-    width: 1980px;
+    width: 100%;
     position: relative;
     z-index: 0;
     height: 750px;

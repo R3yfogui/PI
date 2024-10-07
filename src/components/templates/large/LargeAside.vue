@@ -7,14 +7,15 @@
 		<aside style="z-index: 1000;" class="flex flex-col items-center bg-white text-gray-700 shadow h-full">
 			<!-- Side Nav Bar-->
 			<router-link to="/landing">
-			<div class="h-16 flex items-center w-full hover">
-				<!-- Logo Section -->
-				
-				<a>
-					<h1 >Home</h1>
-				</a>
-			    
-			</div>
+        <div class="h-16 flex items-center w-full">
+			<!-- Logo Section -->
+			<a class="h-45 w-45 " href="">
+				<img
+					class="h-20 w-18 "
+					src="../../../assets/img/logo.jpg"
+					alt="svelte logo" />
+			</a>
+		</div>
 		</router-link>
 
 
@@ -161,7 +162,7 @@
 	</div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .hover:hover{
 	background-color: gray
 	

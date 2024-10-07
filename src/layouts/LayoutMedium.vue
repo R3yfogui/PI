@@ -21,7 +21,7 @@ import MediumFooter from '@/components/templates/medium/MediumFooter.vue'
 
 <style scoped>
 #layout-medium {
-  display: grid;
+ 
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     'aside main'
@@ -46,10 +46,10 @@ main {
 }
 
 footer {
-  display: flex;
+  
   justify-content: space-between;
   align-items: center;
-  padding: 3rem;
+
   background-color: #eeeeee;
   grid-area: footer;
 }

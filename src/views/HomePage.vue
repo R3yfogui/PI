@@ -1,5 +1,34 @@
 <script>
- 
+ function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+
+import { onMounted } from 'vue';
+    
+    import Rellax from 'rellax'
+    
+    onMounted(() => {
+      let rellax = new Rellax('.rellax');
+      
+
+    
+  });
+    
 </script>
 <template>
 
@@ -32,7 +61,7 @@
                     <h1 class="hero__title">
                         <span>Sei lá!</span> Sei lá mais ainda!
                     </h1>
-                    <button class="button">Cadastrar-se</button>
+                    <button class="button" style="z-index: 100;" >Cadastrar-se</button>
                 </div>
             </div>
 
@@ -43,7 +72,7 @@
 
             <img style="position: fixed; width: 79%; margin-left: 40%; margin-bottom: 50%;" class="parallax__jax" src="../assets/homeImg/firefly.webp" alt="" />
             <img class="parallax__luna" src="../assets/homeImg/luna.webp" alt="" />
-            <img style="width: 20%;" class="parallax__manny" src="../assets/homeImg/lg.webp" alt="" />
+            <img style="width: 20%; position: fixed; top: 30%; left: 8%;" class="parallax__manny parallax_luna" src="../assets/homeImg/lg.webp" alt="" />
             <img class="parallax__rays" src="../assets/homeImg/rays.webp" alt="" />
         </div>
         

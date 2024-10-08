@@ -43,7 +43,7 @@ import { onMounted } from 'vue';
       <img class=" rellax" data-rellax-speed="-11"  src="@/assets/img/lua.png" alt="lua" id="lua">
       <img class="one rellax" data-rellax-speed="-5" src="@/assets/img/montanhas.png" alt="montanhas " id="montanhas">
     
-      <h2 id="texto">LIVROS</h2>
+      <h2 id="texto">BANANA</h2>
     <a href="#sec" id="btn">Explorar</a>
     <img class="" src="@/assets/img/rua.png" alt="rua" id="rua">
   </section>

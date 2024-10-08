@@ -1,12 +1,12 @@
 <script>
 </script>
 <template>
-	<div style="z-index: 1000;" class=" h-screen w-screen flex static">
+	<div style="z-index: 100;" class=" h-screen w-screen flex static">
 		<!-- container -->
 
-		<aside style="z-index: 1000;" class="flex flex-col items-center bg-white text-gray-700 shadow h-full">
+		<aside  class="flex flex-col items-center bg-white text-gray-700 shadow h-full">
 			<!-- Side Nav Bar-->
-			<router-link to="/landing">
+			<router-link to="/">
         <div class="h-16 flex items-center w-full">
 			<!-- Logo Section -->
 			<a class="h-45 w-45 " href="">
@@ -19,7 +19,7 @@
 		</router-link>
 
 
-			<ul>
+			<ul style="z-index: 1000;">
 				<!-- Items Section -->
 				<li class="h-16 px-6 flex flex justify-center items-center w-full
 				focus:text-orange-500 hover:bg-gray-100">
@@ -143,10 +143,10 @@
 
 			</ul>
 
-			<div class="mt-auto h-16 flex items-center w-full">
+			<div class="mt-auto h-16 flex items-center w-full" >
 				<!-- Action Section -->
 				<button class="h-16 w-10 mx-auto flex flex justify-center items-center
-				w-full focus:text-orange-500 hover:bg-red-200 focus:outline-none">
+				w-full focus:text-orange-500 hover:bg-red-200 focus:outline-none" style="display: flex;">
 					<svg class="h-5 w-5 text-red-700" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
 						stroke-linejoin="round">
@@ -455,7 +455,7 @@ button {
 }
 
 button:hover {
-	background: #6d44b8;
+	background: #dda8af;
 }
 
 .login {

@@ -31,6 +31,8 @@
   
   .footer{
       position: sticky;
+      bottom: 0%;
+      width: 100%;
   background:#000;
   padding: 20px 0px;
   font-family: 'Play', sans-serif;

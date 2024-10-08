@@ -6,9 +6,7 @@ import LargeFooter from '@/components/templates/large/LargeFooter.vue'
 
 <template>
   <div id="layout-large">
-    <header>
-      <large-header />
-    </header>
+    
     <aside>
       <large-aside />
     </aside>

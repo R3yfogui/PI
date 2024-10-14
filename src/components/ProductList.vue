@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, computed } from 'vue';
+import { onMounted } from 'vue';
 import { useProdutoStore } from '@/stores/produto';
 
 import { formatDescription, formatPrice, formatTitle } from '@/helpers/format';
@@ -13,7 +13,7 @@ async function getProdutos() {
   
 }
 
-const products = computed(() => { return productStore.produtos })
+// const products = computed(() => { return productStore.produtos })
 
 // watch(
 //   () => props.category_id,
@@ -28,6 +28,7 @@ onMounted(async () => {
 </script>
 
 <template>
+  <!-- {{ productStore.produtos }} a -->
   
   <div class="product-list">
     <!-- <router-link :to="{ name: 'ProductAdd' }">
@@ -35,11 +36,11 @@ onMounted(async () => {
         <i class="mdi mdi-plus" />
       </button>
     </router-link> -->
-    <div v-if="products.length === 0">
+    <div v-if="productStore.produtos.length === 0">
       <p>Produtos não encontrados!!!</p>
     </div>
     <div
-      v-for="product in products"
+      v-for="product in productStore.produtos"
       :key="product.id"
       class="product-card"
     >
@@ -48,11 +49,11 @@ onMounted(async () => {
         <i class="mdi mdi-heart-outline" />
       </div> -->
       <div class="product-title-price">
-        <p>{{ formatTitle(product.nome) }}</p>
+        <p>{{ product.nome }}</p>
         <p>{{ formatPrice(product.preco * 1) }}</p>
       </div>
       <div class="product-description-stars">
-        <p>{{ formatDescription(product.descricao) }}</p>
+        <!-- <p>{{ formatDescription(product.descricao) }}</p> -->
         <div class="stars">
           <i class="mdi mdi-star" />
           <i class="mdi mdi-star" />

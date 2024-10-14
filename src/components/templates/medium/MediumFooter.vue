@@ -1,3 +1,8 @@
+<script>
+// import { useAuthStore } from '@/stores/auth';
+
+// const authStore = useAuthStore();
+</script>
 <template>
     
   <footer>
@@ -16,6 +21,10 @@
   <li><a href="#">Privacy Policy</a></li>
   <li><a href="#">Terms & Conditions</a></li>
   <li><a href="#">Career</a></li>
+  <!-- <li>
+    		<a href="#">Logado: {{ authStore.user.email }} </a> |
+    		
+  </li> -->
   </ul>
   </div>
   

@@ -44,10 +44,10 @@ onMounted(async () => {
       :key="product.id"
       class="product-card"
     >
-      <!-- <div class="product-img-wrapper">
-        <img :src="product.image?.url" alt="product.name" />
+      <div class="product-img-wrapper">
+        <img :src="product.backgroundChar?.url" alt="product.name" />
         <i class="mdi mdi-heart-outline" />
-      </div> -->
+      </div>
       <div class="product-title-price">
         <p>{{ product.nome }}</p>
         <p>{{ formatPrice(product.preco * 1) }}</p>

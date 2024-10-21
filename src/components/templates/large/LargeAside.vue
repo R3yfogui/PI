@@ -96,9 +96,9 @@
 				
 				
 				<li class="hover:bg-gray-100">
-					<router-link to="/landing" class="h-16 px-6 flex flex justify-center items-center w-full
+					<router-link to="/login" class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500">
-					Home
+					Login
 				</router-link>
 				</li>
 			    

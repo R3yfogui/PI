@@ -49,7 +49,7 @@ onMounted(() => {
                     <h1 class="hero__title">
                         <span>Sei lá!</span> Sei lá mais ainda!
                     </h1>
-                    <button class="button">Cadastrar-se</button>
+                    <button class="button" style="z-index: 100;" >Cadastrar-se</button>
                 </div>
             </div>
 
@@ -60,7 +60,7 @@ onMounted(() => {
 
             <img style="position: fixed; width: 79%; margin-left: 40%; margin-bottom: 50%;" class="parallax__jax" src="../assets/homeImg/firefly.webp" alt="" />
             <img class="parallax__luna" src="../assets/homeImg/luna.webp" alt="" />
-            <img style="width: 20%;" class="parallax__manny" src="../assets/homeImg/lg.webp" alt="" />
+            <img style="width: 20%; position: fixed; top: 30%; left: 8%;" class="parallax__manny parallax_luna" src="../assets/homeImg/lg.webp" alt="" />
             <img class="parallax__rays" src="../assets/homeImg/rays.webp" alt="" />
         </div>
         

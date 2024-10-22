@@ -41,16 +41,16 @@
 				    </router-link>
 
 				</li>
-				<li class="hover:bg-gray-100">
+				<li class="hover:bg-gray-100 focus:text-orange-500">
 					<div class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500" >
 						<a href="#modal" role="button" class="button button__link">Modal </a>
 					</div>
 				</li>
 
-				<div class="modal-wrapper" id="modal">
+				<div class="modal-wrapper" id="modal" style="z-index: 1000000;">
 					
-					<div class="login-wrap">
+					<div class="login-wrap" style="z-index: 1000000;">
 
 						<div class="wrapper">
 							
@@ -58,35 +58,17 @@
 								Login Form
 							</div>
 							<a href="#!" role="button" class="close checkbox" style="justify-content: center; align-items: center; border-radius: 20px; position: relative;  width: 50px; height: 50px; z-index: 100000; background-color: white;" aria-label="close this modal"> X </a>
-							<form action="#">
-								<div class="field">
-									<input type="text" required>
-									<label>Email Address</label>
-								</div>
-								<div class="field">
-									<input type="password" required>
-									<label>Password</label>
-								</div>
-								<div class="content">
-									<div class="checkbox">
-										<input type="checkbox" id="remember-me">
-										<label for="remember-me">Remember me</label>
-									</div>
-									<div class="pass-link">
-										<a href="#">Forgot password?</a>
-									</div>
-								</div>
-								<div class="field">
-									<input type="submit" value="Login">
-								</div>
-								<div class="signup-link">
-									Not a member? <a href="#">Signup now</a>
-								</div>
-							</form>
+							<div class="passage">
+  <div class="authContainer" style="position: relative; z-index: 10000;">
+    <passage-auth
+      app-id="XlYsZEZ1pdDgVZbtY42oX11w"
+    ></passage-auth>
+  </div>
+  </div>
 						</div>
 					</div>
 				</div>
-				<li class="hover:bg-gray-100">
+				<li class="hover:bg-gray-100 focus:text-orange-500">
 					<router-link to="/loja" class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500">
 					Loja
@@ -104,29 +86,10 @@
 			    
 
 				<li class="hover:bg-gray-100">
-					<a href="." class="h-16 px-6 flex flex justify-center items-center w-full
+					<router-link to="/landing" class="h-16 px-6 flex flex justify-center items-center w-full
 					focus:text-orange-500">
-						<svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-							stroke-linecap="round" stroke-linejoin="round">
-							<circle cx="12" cy="12" r="3"></circle>
-							<path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1
-							0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0
-							0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2
-							2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0
-							0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1
-							0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0
-							0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65
-							0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0
-							1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0
-							1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2
-							0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0
-							1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0
-							2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0
-							0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65
-							1.65 0 0 0-1.51 1z"></path>
-						</svg>
-					</a>
+					Landing
+				    </router-link>
 				</li>
 
 				<li class="hover:bg-gray-100">
@@ -164,8 +127,11 @@
 
 <style scoped lang="scss">
 .wrapper {
+	width: 460px;
+	
 	background-color: #fff;
 	border-radius: 30px;
+	transition: 1s;
 }
 .hover:hover{
 	background-color: gray
@@ -354,6 +320,7 @@ body {
 	position: fixed;
 	right: 0;
 	top: 0;
+	
 }
 
 #modal {

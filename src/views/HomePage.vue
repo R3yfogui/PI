@@ -1,3 +1,23 @@
+<script setup>
+ 
+import { onMounted } from 'vue';
+import { useAuthStore } from '@/stores/auth';
+
+const authStore = useAuthStore();
+
+const getUserInfo = async () => {
+  try {
+    const authToken = localStorage.getItem('psg_auth_token');
+    await authStore.setToken(authToken);
+  } catch (error) {
+    authStore.unsetToken();
+  }
+};
+
+onMounted(() => {
+  getUserInfo();
+});
+</script>
 <template>
 
     <body>

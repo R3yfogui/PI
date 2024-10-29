@@ -14,6 +14,7 @@ import VueRellax from 'vue-rellax'
 
 
 
+
 const app = createApp(App)
 
 app.use(createPinia())

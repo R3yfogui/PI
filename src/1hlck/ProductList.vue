@@ -30,11 +30,7 @@ onMounted(async () => {
 <template>
   
   <div class="product-list">
-    <router-link :to="{ name: 'ProductAdd' }">
-      <button class="icon ">
-        <i class="mdi mdi-plus" />
-      </button>
-    </router-link>
+    
     <div v-if="productStore.products.length === 0">
       <p>Produtos não encontrados!!!</p>
     </div>

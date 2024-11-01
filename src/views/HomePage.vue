@@ -71,7 +71,7 @@ onMounted(() => {
                 <div id="parallax-wrapper">
                     <div>
                         <div class="p-one1">
-                        <div class="p-one parallax-inner">
+                        <div class="p-one parallax-inner" style="z-index: 10000;">
                             <h2>PIPIPI POPOPO</h2>
                         </div>
                     </div>

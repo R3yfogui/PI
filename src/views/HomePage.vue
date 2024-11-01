@@ -81,7 +81,7 @@ onMounted(() => {
                     <div>
                         <div class="p-one1">
                         <div class="p-one parallax-inner" style="z-index: 10000;">
-                            <h2>{{ psg_auth_token }}</h2>
+                            <h2>PIPIPI POPOPO</h2>
                         </div>
                     </div>
                         
@@ -131,66 +131,11 @@ onMounted(() => {
                         </div>
                     </div>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
+                <div class="bananana">
+                <p >
+                    {{ psg_auth_token }}
                 </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
-                    aspernatur nesciunt rem, officiis atque deserunt architecto excepturi
-                    ducimus consectetur suscipit dolore sed tempora, assumenda corporis
-                    eius quasi quas pariatur.
-                </p>
+            </div>
                 
                 
             </div>
@@ -215,6 +160,19 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.bananana{
+    
+    z-index: 100;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    height: 720px;
+    position: relative;
+}
+.bananana p{
+    text-wrap: wrap;
+    font-size: 20px;
+}
 .seila{
   display: flex;
   justify-content: center;

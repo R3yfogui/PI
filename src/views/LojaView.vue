@@ -29,8 +29,4 @@ onMounted(() => {
 
 <template>
   <product-list />
-  <div>
-    <router-link  to="/logout">Logout</router-link> |
-      {{ authStore.user.email }}
-    </div>
 </template>

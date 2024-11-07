@@ -131,7 +131,7 @@ onMounted(() => {
                         </div>
                     </div>
                 </div>
-                <div class="bananana">
+                <div class="bananana" style="text-transform: none;">
                 <p >
                     {{ psg_auth_token }}
                 </p>

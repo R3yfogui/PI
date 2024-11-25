@@ -38,9 +38,9 @@ import { onMounted } from 'vue';
   
      <section class="oink">
     
-      <img class=" rellax" data-rellax-speed="1" src="@/assets/img/céu.png" alt="céu" id="ceu">
+      <img class=" rellax" data-rellax-speed="1" src="@/assets/img/landing.webp" alt="céu" id="ceu">
       <img class="estrelas rellax" data-rellax-speed="-7" src="@/assets/img/estrelas.png" alt="estrelas" id="estrelas">
-      <img class=" rellax" data-rellax-speed="-11"  src="@/assets/img/lua.png" alt="lua" id="lua">
+      <img class=" rellax" data-rellax-speed="-11"  src="@/assets/img/logo.png" alt="lua" id="lua">
       <img class="one rellax" data-rellax-speed="-5" src="@/assets/img/montanhas.png" alt="montanhas " id="montanhas">
     
       <h2 id="texto">BANANA</h2>
@@ -137,8 +137,9 @@ import { onMounted } from 'vue';
 
 .oink {
   background-color: #0d0422;
-  z-index: 1;
   display: flex;
+  z-index: 1;
+  position: relative;
   justify-content: center;
   align-items: center;
   
@@ -221,7 +222,7 @@ section::before {
   width: 100%;
   height: 100px;
   background: linear-gradient(to top, #0d0422, transparent);
-  z-index: 100;
+  z-index: 10;
 }
 
 section img {
@@ -236,6 +237,9 @@ section img {
 
 section img#lua {
   mix-blend-mode: screen;
+  width: 300px;
+  right: 90%;
+  
 }
 
 section img#montanhas {

@@ -30,7 +30,7 @@
   
   
   .footer{
-      position: sticky;
+      position: fixed;
       bottom: 0%;
       width: 100%;
   background:#000;
@@ -38,6 +38,7 @@
   font-family: 'Play', sans-serif;
   text-align:center;
   z-index: 100;
+  top: 85%;
   }
   
   .footer .row{

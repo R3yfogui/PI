@@ -7,12 +7,7 @@
     
   <footer>
   <div class="footer">
-  <div class="row">
-  <a href="#"><i class="fa fa-facebook"></i></a>
-  <a href="#"><i class="fa fa-instagram"></i></a>
-  <a href="#"><i class="fa fa-youtube"></i></a>
-  <a href="#"><i class="fa fa-twitter"></i></a>
-  </div>
+
   
   <div class="row">
   <ul>
@@ -39,12 +34,14 @@
   
   
   .footer{
-      position: sticky;
+      position: fixed;
   background:#000;
   padding: 20px 0px;
   font-family: 'Play', sans-serif;
   text-align:center;
+  width: 100%;
   z-index: 1000;
+  top: 90%;
   }
   
   .footer .row{

@@ -44,10 +44,7 @@ onMounted(async () => {
       :key="product.id"
       class="product-card"
     >
-      <div class="product-img-wrapper">
-        <img :src="product.backgroundChar?.url" alt="product.name" />
-        <i class="mdi mdi-heart-outline" />
-      </div>
+      
       <div class="product-title-price">
         <p>{{ product.nome }}</p>
         <p>{{ formatPrice(product.preco * 1) }}</p>
@@ -64,7 +61,23 @@ onMounted(async () => {
       </div>
     </div>
   </div>
-  
+  /////////////////////////////////////////////////////////
+  <h1>Categoria</h1>
+  <hr />
+  <div class="form">
+    <input type="text" v-model="categoria.descricao" placeholder="Descrição" />
+    <button @click="salvar">Salvar</button>
+    <button @click="limpar">Limpar</button>
+  </div>
+  <hr />
+  <ul>
+    <li v-for="categoria in categorias" :key="categoria.id">
+      <span @click="editar(categoria)">
+        ({{ categoria.id }}) - {{ categoria.descricao }} -
+      </span>
+      <button @click="excluir(categoria.id)">X</button>
+    </li>
+  </ul>
 </template>
 
 <style scoped>

@@ -17,7 +17,7 @@
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "bootstrap-vue": "^2.23.1",
-    "pinia": "^2.1.7",
+    "pinia": "^2.3.0",
     "swiper": "^11.1.14",
     "vanilla-tilt": "^1.8.1",
     "vanilla-tilt-vue": "^0.1.3",

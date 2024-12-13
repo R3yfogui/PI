@@ -5,11 +5,11 @@ import { useCompraStore } from '@/stores/compra';
 import { formatDescription, formatPrice, formatTitle } from '@/helpers/format';
 
 
-const productStore = useCompraStore();
+const compraStore = useCompraStore();
 
 async function getCompras() {
   
-    await productStore.getCompras();
+    await compraStore.getCompras();
   
 }
 
@@ -36,18 +36,18 @@ onMounted(async () => {
         <i class="mdi mdi-plus" />
       </button>
     </router-link> -->
-    <div v-if="productStore.compras.length === 0">
+    <div v-if="compraStore.compras.length === 0">
       <p>Compras não encontrados!!!</p>
     </div>
     <div
-      v-for="product in productStore.compras"
-      :key="product.id"
+      v-for="compra in compraStore.compras"
+      :key="compra.id"
       class="product-card"
     >
       
       <div class="product-title-price">
-        <p>{{ product.nome }}</p>
-        <p>{{ formatPrice(product.preco * 1) }}</p>
+        <p>{{ compra }}</p>
+        <!-- <p>{{ formatPrice(product.preco * 1) }}</p> -->
       </div>
       <div class="product-description-stars">
         <!-- <p>{{ formatDescription(product.descricao) }}</p> -->
@@ -61,23 +61,7 @@ onMounted(async () => {
       </div>
     </div>
   </div>
-  /////////////////////////////////////////////////////////
-  <h1>Categoria</h1>
-  <hr />
-  <div class="form">
-    <input type="text" v-model="categoria.descricao" placeholder="Descrição" />
-    <button @click="salvar">Salvar</button>
-    <button @click="limpar">Limpar</button>
-  </div>
-  <hr />
-  <ul>
-    <li v-for="categoria in categorias" :key="categoria.id">
-      <span @click="editar(categoria)">
-        ({{ categoria.id }}) - {{ categoria.descricao }} -
-      </span>
-      <button @click="excluir(categoria.id)">X</button>
-    </li>
-  </ul>
+  
 </template>
 
 <style scoped>

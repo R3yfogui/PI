@@ -1,8 +1,9 @@
 <script setup>
 import { onMounted } from 'vue';
 import { useProdutoStore } from '@/stores/produto';
+import { useCompraStore } from '@/stores/compra';
 
-import { formatDescription, formatPrice, formatTitle } from '@/helpers/format';
+import {formatPrice} from '@/helpers/format';
 
 
 const productStore = useProdutoStore();
@@ -24,6 +25,22 @@ async function getProdutos() {
 
 onMounted(async () => {
   await getProdutos();
+});
+
+const compraStore = useCompraStore();
+
+async function createCompras() {
+  
+    await compraStore.createCompras();
+  
+}
+async function getCompras() {
+  
+  await compraStore.getCompras();
+
+}
+onMounted(async () => {
+  await getCompras();
 });
 </script>
 
@@ -51,6 +68,7 @@ onMounted(async () => {
       <div class="product-title-price">
         <p>{{ product.nome }}</p>
         <p>{{ formatPrice(product.preco * 1) }}</p>
+        <button style="z-index: 1000;" @click="createCompras()">Adcionar</button>
       </div>
       <div class="product-description-stars">
         <!-- <p>{{ formatDescription(product.descricao) }}</p> -->

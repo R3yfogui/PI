@@ -2,7 +2,7 @@
 import { onMounted } from 'vue';
 import { useCompraStore } from '@/stores/compra';
 
-import { formatDescription, formatPrice, formatTitle } from '@/helpers/format';
+// import { formatDescription, formatPrice, formatTitle } from '@/helpers/format';
 
 
 const compraStore = useCompraStore();
@@ -51,13 +51,7 @@ onMounted(async () => {
       </div>
       <div class="product-description-stars">
         <!-- <p>{{ formatDescription(product.descricao) }}</p> -->
-        <div class="stars">
-          <i class="mdi mdi-star" />
-          <i class="mdi mdi-star" />
-          <i class="mdi mdi-star" />
-          <i class="mdi mdi-star" />
-          <i class="mdi mdi-star" />
-        </div>
+        
       </div>
     </div>
   </div>

@@ -12,7 +12,7 @@ export default class CompraService {
 //   }
 
   async createCompra(compra) {
-    const response = await axios.create('/compras/', compra);
+    const response = await axios.post('/compras/', compra);
     return response.data;
   }
 }

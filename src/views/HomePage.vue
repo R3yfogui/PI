@@ -3,6 +3,31 @@
  import { onMounted, ref } from 'vue';
 import { PassageUser } from '@passageidentity/passage-elements/passage-user';
 import { useAuthStore } from '@/stores/auth';
+function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+
+
+    
+    import Rellax from 'rellax'
+    
+   
+    
 
 const authStore = useAuthStore();
 const psg_auth_token = ref('');
@@ -25,6 +50,7 @@ const getUserInfo = async () => {
 
 onMounted(() => {
   getUserInfo();
+  let rellax = new Rellax('.rellax');
 });
 </script>
 <template>
@@ -46,9 +72,9 @@ onMounted(() => {
                             </ul>
                         </nav>
                         <div class="flex-group" aria-label="social links">
-                            <a href="#">X</a>
-                            <a href="#">IG</a>
-                            <a href="#">YT</a>
+                            <a href="#">H</a>
+                            <a href="#">S</a>
+                            <a href="#">R</a>
                         </div>
                     </div>
                 </div>
@@ -95,38 +121,38 @@ onMounted(() => {
                     </div>
                 </div>
                 <div class="container">
-                    <div class="card">
+                    <div class="card reveal">
                         <div class="box">
                             <div class="content">
                                 <h2>01</h2>
                                 <h3>PoPulares</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure
                                     nemo labore inventore?</p>
-                                <a href="#">Read More</a>
+                                <a href="#">Ver Mais</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card reveal">
                         <div class="box">
                             <div class="content">
                                 <h2>02</h2>
                                 <h3>Mais Comprados</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure
                                     nemo labore inventore?</p>
-                                <a href="#">Read More</a>
+                                <a href="#">Ver Mais</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card reveal">
                         <div class="box">
                             <div class="content">
                                 <h2>03</h2>
                                 <h3>Novos</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure
                                     nemo labore inventore?</p>
-                                <a href="#">Read More</a>
+                                <a href="#">Ver Mais</a>
                             </div>
                         </div>
                     </div>
@@ -160,6 +186,17 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.reveal {
+
+transform: translateY(150px);
+opacity: 0;
+transition: 1s all ease;
+}
+
+.reveal.active {
+transform: translateY(0);
+opacity: 1;
+}
 .bananana{
     width: 100%;
     z-index: 100;

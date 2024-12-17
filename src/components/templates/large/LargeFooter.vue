@@ -11,16 +11,16 @@
   
   <div class="row">
   <ul>
-  <li><a href="#">Contact us</a></li>
-  <li><a href="#">Our Services</a></li>
-  <li><a href="#">Privacy Policy</a></li>
-  <li><a href="#">Terms & Conditions</a></li>
-  <li><a href="#">Career</a></li>
+    <li><a href="#">Contato</a></li>
+<li><a href="#">Serviços</a></li>
+<li><a href="#">Privacidade e Políticas</a></li>
+<li><a href="#">Termos e Condições</a></li>
+<li><a href="#">Carreira</a></li>
   </ul>
   </div>
   
   <div class="row">
-  INFERNO Copyright © 2021 Inferno - All rights reserved || 
+  HSR Camarões Copyright © 2024 HSR - Todos os Direitos Reservados ||  
   </div>
   </div>
   </footer>

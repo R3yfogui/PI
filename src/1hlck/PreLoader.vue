@@ -4,7 +4,7 @@ import '../../node_modules/vue-preloader/dist/style.css'
 </script>
 
 <template>
- <div class="teste1" style="z-index: 100000;">
+ <div class="teste1" style="z-index: 10000;">
   <TemplatesHeader />
   <TemplatesPage>
 	  <slot />

@@ -1,91 +1,12 @@
 <script setup>
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { onMounted } from 'vue';
-import { useProdutoStore } from '@/stores/produto';
-
-import { formatDescription, formatPrice, formatTitle } from '@/helpers/format';
-
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-
-const onSwiper = (swiper) => {
-  console.log(swiper);
-};
-
-const onSlideChange = () => {
-  console.log('slide change');
-};
-
-const modules = [Navigation, Pagination, Scrollbar, A11y];
-
-
-
-
-const productStore = useProdutoStore();
-
-async function getProdutos() {
-  
-    await productStore.getProdutos();
-  
-}
-
-onMounted(async () => {
-  await getProdutos();
-});
+import Neeko from '@/1hlck/Neeko.vue';
 
 </script>
 
 
 <template>
-  
-   <div class="product-list">
-    <!-- <router-link :to="{ name: 'ProductAdd' }">
-      <button class="icon ">
-        <i class="mdi mdi-plus" />
-      </button>
-    </router-link> -->
-   
-    <div v-if="productStore.produtos.length === 0">
-      <p>Produtos não encontrados!!!</p>
-    </div>
-    <swiper
-      :breakpoints="{ 200:{ slidesPerView:5 }, 900:{ slidesPerView:3, } }"
-      :modules="modules"
-      :slides-per-view="5"
-      :space-between="50"
-      navigation
-      :pagination="{ clickable: true }"
-      :scrollbar="{ draggable: true }"
-      @swiper="onSwiper"
-      @slideChange="onSlideChange"
-    >
-  
-    <div
-      v-for="product in productStore.produtos"
-      :key="product.id"
-      class="product-card">
-      <swiper-slide>
-      <div class="product-img-wrapper">
-        <img :src="product.backgroundChar?.url" alt="product.name" />
-        <i class="mdi mdi-heart-outline" />
-      </div>
-    
-      <div class="product-title-price">
-        <p>{{ product.nome }}</p>
-        <p>{{ formatPrice(product.preco * 1) }}</p>
-      </div>
-    </swiper-slide>
-    </div>
-  </swiper>
-  </div>
-
-      
-    
-    
-  
+ 
+  <Neeko></Neeko>
   
 
   

@@ -341,9 +341,13 @@ body {
   background-attachment: fixed;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
   .parallax-inner{
     min-height: 350px;
     background-size: cover;
+    
+  }
+  section{
+    padding: 0px;
   }}
 </style>

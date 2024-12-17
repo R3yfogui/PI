@@ -39,7 +39,7 @@
   
   
   .footer{
-      position: sticky;
+      position: static;
   background:#000;
   padding: 20px 0px;
   font-family: 'Play', sans-serif;

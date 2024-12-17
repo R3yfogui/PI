@@ -503,6 +503,7 @@ body {
 }
 
 body .container .card {
+    z-index: 101;
     position: relative;
     min-width: 320px;
     height: 440px;
@@ -821,7 +822,7 @@ img {
 
     body {
         text-transform: none;
-        width: 115%;
+       
     }
 }
 </style>

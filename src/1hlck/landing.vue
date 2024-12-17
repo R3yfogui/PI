@@ -40,12 +40,12 @@ import { onMounted } from 'vue';
     
       <img class=" rellax" data-rellax-speed="1" src="@/assets/img/landing.webp" alt="céu" id="ceu">
       <img class="estrelas rellax" data-rellax-speed="-7" src="@/assets/img/estrelas.png" alt="estrelas" id="estrelas">
-      <img class=" rellax" data-rellax-speed="-11"  src="@/assets/img/logo.png" alt="lua" id="lua">
-      <img class="one rellax" data-rellax-speed="-5" src="@/assets/img/montanhas.png" alt="montanhas " id="montanhas">
+      <img class=" rellax" data-rellax-speed="-11"  src="" alt="lua" id="lua">
+      <img class="one rellax" data-rellax-speed="-5" src="" alt="montanhas " id="montanhas">
     
       <h2 id="texto">BANANA</h2>
-    <a href="#sec" id="btn">Explorar</a>
-    <img class="" src="@/assets/img/rua.png" alt="rua" id="rua">
+    
+    
   </section>
   <section style="padding-top: 0px; height: 100%; padding-bottom: 0px; padding-right: 0px;">
   <div class="sec" id="sec">
@@ -138,10 +138,10 @@ import { onMounted } from 'vue';
 .oink {
   background-color: #0d0422;
   display: flex;
-  z-index: 1;
   position: relative;
   justify-content: center;
   align-items: center;
+  z-index: 99;
   
 }
 
@@ -158,7 +158,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background: linear-gradient(#2b1055, #7597de);
-  z-index: 1;
 }
 
 header {
@@ -206,6 +205,7 @@ header ul li a:hover {
 }
 
 section {
+  z-index: 101;
   width: 100%;
   height: 100vh;
   padding: 100px;
@@ -222,7 +222,6 @@ section::before {
   width: 100%;
   height: 100px;
   background: linear-gradient(to top, #0d0422, transparent);
-  z-index: 10;
 }
 
 section img {
@@ -236,8 +235,6 @@ section img {
 }
 
 section img#lua {
-  mix-blend-mode: screen;
-  width: 300px;
   right: 90%;
   
 }

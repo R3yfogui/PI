@@ -30,12 +30,12 @@ INFERNO Copyright © 2021 Inferno - All rights reserved ||
 
 
 .footer{
-    position: sticky;
+
 background:#000;
 padding: 20px 0px;
 font-family: 'Play', sans-serif;
 text-align:center;
-z-index: 10000;
+z-index: 1000;
 }
 
 .footer .row{

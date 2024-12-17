@@ -161,7 +161,7 @@ onMounted(() => {
 
 <style scoped>
 .bananana{
-    
+    width: 100%;
     z-index: 100;
     word-wrap: break-word;
     flex-wrap: wrap;
@@ -483,6 +483,8 @@ input[type="radio"]{
 }
 
 body {
+    z-index: 1001;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -683,6 +685,7 @@ body .container .card .box .content a:hover {
 }
 
 .main-content {
+    width: 100%;
     position: relative;
     /* z-index: 1; */
     background: hsl(238, 100%, 6%);

@@ -45,9 +45,8 @@ main {
 
 footer {
   justify-content: space-between;
-  position: relative;
   align-items: center;
   background-color: #eeeeee;
-  grid-area: footer;
+
 }
 </style>
